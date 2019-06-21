@@ -1,0 +1,886 @@
+file reset2019-06-21 09:59:34,533 	pid=21418 	[load.py]	DEBUG 	skipping: no svd results present in old assembly
+2019-06-21 09:59:34,607 	pid=21418 	[parallel.py]	INFO 	['ipcluster', 'start', '--daemonize', '--cluster-id=ipyrad-cli-21418', '--engines=Local', '--profile=default', '--n=16']
+2019-06-21 09:59:47,918 	pid=21418 	[cluster_across.py]	INFO 	checkpoint = 0
+2019-06-21 09:59:47,919 	pid=21418 	[cluster_across.py]	INFO 	substeps = [1, 2, 3, 4, 5, 6, 7]
+2019-06-21 09:59:49,183 	pid=21466 	[cluster_across.py]	DEBUG 	cat /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Barro_Colorado_Island_CC269.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Barro_Colorado_Island_CC270.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Bird_Plot_CC191.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Dani's_Creek_CC154.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Frijolito_CC226.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/La_Seda_CC268.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Plantation_Road_CC178.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Rio_Mendoza_CC271.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Rio_Mendoza_CC272.consens.gz /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_consens/Rio_Mendoza_CC273.consens.gz
+2019-06-21 09:59:49,384 	pid=21466 	[cluster_across.py]	DEBUG 	gunzip -c /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test_catcons.tmp
+2019-06-21 09:59:49,406 	pid=21466 	[cluster_across.py]	DEBUG 	sed />/!s/W/A/g;/>/!s/w/A/g;/>/!s/R/A/g;/>/!s/r/A/g;/>/!s/M/A/g;/>/!s/m/A/g;/>/!s/K/T/g;/>/!s/k/T/g;/>/!s/S/C/g;/>/!s/s/C/g;/>/!s/Y/C/g;/>/!s/y/C/g
+2019-06-21 09:59:50,437 	pid=21466 	[cluster_across.py]	DEBUG 	/home/cardenas.61/.conda/envs/local/lib/python2.7/site-packages/bin/vsearch-linux-x86_64 --sortbylength /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test_cathaps.tmp --fasta_width 0 --output /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test_catsort.tmp
+2019-06-21 09:59:51,378 	pid=21466 	[cluster_across.py]	INFO 	['/home/cardenas.61/.conda/envs/local/lib/python2.7/site-packages/bin/vsearch-linux-x86_64', '-cluster_smallmem', '/fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test_catshuf.tmp', '-strand', 'plus', '-query_cov', '0.75', '-minsl', '0.5', '-id', '0.85', '-userout', '/fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test.utemp', '-notmatched', '/fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test.htemp', '-userfields', 'query+target+qstrand', '-maxaccepts', '1', '-maxrejects', '0', '-fasta_width', '0', '-threads', '10', '-fulldp', '-usersort', '-log', '/fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/s6_cluster_stats.txt']
+2019-06-21 10:00:00,455 	pid=21466 	[cluster_across.py]	INFO 	ended vsearch tracking loop
+2019-06-21 10:00:01,028 	pid=21418 	[cluster_across.py]	INFO 	building reads file -- loading utemp file into mem
+2019-06-21 10:00:04,873 	pid=21449 	[cluster_across.py]	INFO 	loading full _catcons file into memory
+2019-06-21 10:00:05,577 	pid=21449 	[cluster_across.py]	INFO 	building clustbits, optim=272, nseeds=13439, cpus=16
+2019-06-21 10:00:05,583 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 272 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_272
+2019-06-21 10:00:05,599 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 544 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_544
+2019-06-21 10:00:05,613 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 816 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_816
+2019-06-21 10:00:05,626 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 1088 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_1088
+2019-06-21 10:00:05,637 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 1360 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_1360
+2019-06-21 10:00:05,649 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 1632 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_1632
+2019-06-21 10:00:05,663 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 1904 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_1904
+2019-06-21 10:00:05,677 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 2176 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_2176
+2019-06-21 10:00:05,694 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 2448 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_2448
+2019-06-21 10:00:05,708 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 2720 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_2720
+2019-06-21 10:00:05,735 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 2992 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_2992
+2019-06-21 10:00:05,746 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 3264 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_3264
+2019-06-21 10:00:05,758 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 3536 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_3536
+2019-06-21 10:00:05,774 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 3808 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_3808
+2019-06-21 10:00:05,789 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 4080 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_4080
+2019-06-21 10:00:05,800 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 4352 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_4352
+2019-06-21 10:00:05,814 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 4624 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_4624
+2019-06-21 10:00:05,829 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 4896 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_4896
+2019-06-21 10:00:05,841 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 5168 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_5168
+2019-06-21 10:00:05,859 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 5440 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_5440
+2019-06-21 10:00:05,874 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 5712 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_5712
+2019-06-21 10:00:05,891 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 5984 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_5984
+2019-06-21 10:00:05,911 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 6256 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_6256
+2019-06-21 10:00:05,942 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 6528 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_6528
+2019-06-21 10:00:05,957 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 6800 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_6800
+2019-06-21 10:00:05,969 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 7072 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_7072
+2019-06-21 10:00:05,981 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 7344 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_7344
+2019-06-21 10:00:05,994 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 7616 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_7616
+2019-06-21 10:00:06,020 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 7888 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_7888
+2019-06-21 10:00:06,039 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 8160 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_8160
+2019-06-21 10:00:06,051 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 8432 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_8432
+2019-06-21 10:00:06,060 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 8704 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_8704
+2019-06-21 10:00:06,069 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 8976 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_8976
+2019-06-21 10:00:06,082 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 9248 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_9248
+2019-06-21 10:00:06,094 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 9520 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_9520
+2019-06-21 10:00:06,112 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 9792 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_9792
+2019-06-21 10:00:06,123 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 10064 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_10064
+2019-06-21 10:00:06,134 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 10336 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_10336
+2019-06-21 10:00:06,153 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 10608 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_10608
+2019-06-21 10:00:06,164 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 10880 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_10880
+2019-06-21 10:00:06,176 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 11152 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_11152
+2019-06-21 10:00:06,187 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 11424 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_11424
+2019-06-21 10:00:06,201 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 11696 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_11696
+2019-06-21 10:00:06,213 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 11968 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_11968
+2019-06-21 10:00:06,228 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 12240 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_12240
+2019-06-21 10:00:06,250 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 12512 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_12512
+2019-06-21 10:00:06,262 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 12784 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_12784
+2019-06-21 10:00:06,283 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 13056 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_13056
+2019-06-21 10:00:06,343 	pid=21449 	[cluster_across.py]	DEBUG 	writing chunk - seqsize 272 loci 13328 /fs/project/adams.1970/cardenas.61/CLI_ipyrad_test/CLI_test_across/CLI_test-tmpalign/CLI_test.chunk_13328
+2019-06-21 10:00:06,466 	pid=21418 	[cluster_across.py]	INFO 	starting alignments
+2019-06-21 10:00:07,619 	pid=21466 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'C' 'G' 'T' 'G' 'G' 'A' 'G' 'A' 'T' 'C' 'T'
+  'G' 'G' 'C' 'G' 'C' 'A' 'A' 'C' 'A' 'A' 'G' 'A' 'C' 'G' 'C' 'G' 'G' 'A'
+  'T' 'C' 'G' 'A' 'C' 'A' 'A' 'C' 'C' 'C' 'G' 'T' 'T' 'G' 'C' 'T' 'G' 'T'
+  'G' 'C' 'G' 'A' 'A' 'G' 'A' 'G' 'G' 'A' 'C' 'G' 'G' 'G' 'C' 'C' 'G' 'G'
+  'T' 'C' 'T' 'A' 'C' 'C' 'A' 'G' 'C' 'T' 'G' 'C' 'G' 'C' 'C' 'G' 'C' 'T'
+  'G' 'G' 'T' 'A' 'C' 'G' 'A' 'C' 'C' 'A' 'G' 'T' 'T' 'C' 'T' 'A' 'T' 'G'
+  'T' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'n' 'n' 'n' 'n' 'A' 'C'
+  'G' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'G'
+  'G' 'A' 'C' 'A' 'T' 'G' 'A' 'C' 'T' 'C' 'A' 'G' 'C' 'G' 'G' 'T' 'T' 'C'
+  'G' 'A' 'G' 'T' 'T' 'C' 'G' 'A' 'A' 'G' 'T' 'G' 'G' 'A' 'C' 'A' 'C' 'C'
+  'A' 'G' 'C' 'C' 'G' 'C' 'G' 'C' 'C' 'A' 'A' 'C' 'G' 'A' 'G' 'G' 'T' 'C'
+  'T' 'G' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'G' 'A' 'G' 'G' 'T' 'G' 'G' 'C' 'C'
+  'G' 'A' 'G' 'A' 'A' 'C' 'C' 'T' 'G' 'G' 'C' 'G' 'A' 'G' 'G' 'C' 'A' 'G'
+  'C' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'A' 'G' 'A' 'G' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'C' 'G' 'T' 'G' 'G' 'A' 'G' 'A' 'T' 'C' 'T'
+  'G' 'G' 'C' 'G' 'C' 'A' 'A' 'C' 'A' 'A' 'G' 'A' 'C' 'G' 'C' 'G' 'G' 'A'
+  'T' 'C' 'G' 'A' 'C' 'A' 'A' 'C' 'C' 'C' 'G' 'T' 'T' 'G' 'C' 'T' 'G' 'T'
+  'G' 'C' 'G' 'A' 'A' 'G' 'A' 'G' 'G' 'A' 'C' 'G' 'G' 'G' 'C' 'C' 'G' 'G'
+  'T' 'C' 'T' 'A' 'C' 'C' 'A' 'G' 'C' 'T' 'G' 'C' 'G' 'C' 'C' 'G' 'C' 'T'
+  'G' 'G' 'T' 'A' 'C' 'G' 'A' 'C' 'C' 'A' 'G' 'T' 'T' 'C' 'T' 'A' 'T' 'G'
+  'T' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'n' 'n' 'n' 'n' '-' '-'
+  '-' '-' '-' '-' 'C' 'C' 'G' 'A' 'C' 'G' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'G'
+  'G' 'A' 'C' 'A' 'T' 'G' 'A' 'C' 'T' 'C' 'A' 'G' 'C' 'G' 'G' 'T' 'T' 'C'
+  'G' 'A' 'G' 'T' 'T' 'C' 'G' 'A' 'A' 'G' 'T' 'G' 'G' 'A' 'C' 'A' 'C' 'C'
+  'A' 'G' 'C' 'C' 'G' 'C' 'G' 'C' 'C' 'A' 'A' 'C' 'G' 'A' 'G' 'G' 'T' 'C'
+  'T' 'G' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'G' 'A' 'G' 'G' 'T' 'G' 'G' 'C' 'C'
+  'G' 'A' 'G' 'A' 'A' 'C' 'C' 'T' 'G' 'G' 'C' 'G' 'A' 'G' 'G' 'C' 'A' 'G'
+  'C' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'A' 'G' 'A' 'G' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:07,765 	pid=21449 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'A' 'C' 'A' 'G' 'C' 'A' 'T' 'A' 'A' 'A' 'T'
+  'A' 'C' 'C' 'T' 'G' 'T' 'C' 'G' 'A' 'A' 'T' 'G' 'A' 'A' 'G' 'C' 'A' 'T'
+  'A' 'T' 'T' 'T' 'T' 'A' 'C' 'C' 'T' 'T' 'T' 'G' 'T' 'A' 'G' 'C' 'C' 'C'
+  'T' 'G' 'G' 'G' 'G' 'G' 'C' 'A' 'A' 'A' 'C' 'G' 'G' 'G' 'A' 'A' 'A' 'C'
+  'C' 'G' 'A' 'G' 'A' 'A' 'C' 'G' 'G' 'T' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'A' 'C' 'A' 'G' 'C' 'A' 'T' 'A' 'A' 'A' 'T'
+  'A' 'C' 'C' 'T' 'G' 'T' 'C' 'G' 'A' 'A' 'T' 'G' 'A' 'A' 'G' 'C' 'A' 'T'
+  'A' 'T' 'T' 'T' 'T' 'A' 'C' 'C' 'T' 'T' 'T' 'G' 'T' 'A' 'G' 'C' 'C' 'C'
+  'T' 'G' 'G' 'G' 'G' 'G' 'C' 'A' 'A' 'A' 'C' 'G' 'G' 'G' 'A' 'A' 'A' 'C'
+  'C' 'G' 'A' 'G' 'A' 'A' 'C' 'G' 'G' 'T' 'A' 'C' 'C' 'G']]
+2019-06-21 10:00:07,774 	pid=21449 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'T' 'G' 'A' 'T' 'G' 'G' 'C' 'G' 'T' 'T' 'C'
+  'A' 'T' 'C' 'T' 'T' 'G' 'G' 'G' 'T' 'C' 'G' 'G' 'T' 'C' 'G' 'A' 'G' 'G'
+  'C' 'G' 'G' 'A' 'G' 'G' 'G' 'T' 'G' 'C' 'C' 'G' 'A' 'C' 'A' 'C' 'C' 'G'
+  'T' 'C' 'G' 'G' 'C' 'G' 'A' 'C' 'C' 'T' 'C' 'C' 'A' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'T' 'G' 'A' 'T' 'G' 'G' 'C' 'G' 'T' 'T' 'C'
+  'A' 'T' 'C' 'T' 'T' 'G' 'G' 'G' 'T' 'C' 'G' 'G' 'T' 'C' 'G' 'A' 'G' 'G'
+  'C' 'G' 'G' 'A' 'G' 'G' 'G' 'T' 'G' 'C' 'C' 'G' 'A' 'C' 'A' 'C' 'C' 'G'
+  'T' 'C' 'G' 'G' 'C' 'G' 'A' 'C' 'C' 'T' 'C' 'C' 'A' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'T' 'G' 'A' 'T' 'G' 'G' 'C' 'G' 'T' 'T' 'C'
+  'A' 'T' 'C' 'T' 'T' 'G' 'G' 'G' 'T' 'C' 'G' 'G' 'T' 'C' 'G' 'A' 'G' 'G'
+  'C' 'G' 'G' 'A' 'G' 'G' 'G' 'T' 'G' 'C' 'C' 'G' 'A' 'C' 'A' 'C' 'C' 'G'
+  'T' 'C' 'G' 'G' 'C' 'G' 'A' 'C' 'C' 'T' 'C' 'C' 'A' 'A' 'C' 'C' 'G']]
+2019-06-21 10:00:07,819 	pid=21449 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' ..., 'C' 'C' 'G']
+ ['T' 'G' 'C' ..., 'C' 'C' 'G']
+ ['T' 'G' 'C' ..., 'C' 'C' 'G']
+ ['T' 'G' 'C' ..., 'C' 'C' 'G']
+ ['T' 'G' 'C' ..., 'C' 'C' 'G']]
+2019-06-21 10:00:07,834 	pid=21449 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'T' 'C' 'G' 'A' 'G' 'G' 'T' 'T' 'G' 'T' 'T' 'G'
+  'G' 'T' 'G' 'G' 'G' 'T' 'T' 'C' 'G' 'T' 'C' 'G' 'A' 'G' 'C' 'A' 'G' 'C'
+  'A' 'G' 'C' 'G' 'C' 'G' 'G' 'T' 'G' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'A' 'C'
+  'A' 'G' 'G' 'A' 'G' 'C' 'A' 'G' 'A' 'G' 'C' 'G' 'G' 'T' 'C' 'A' 'G' 'C'
+  'C' 'C' 'G' 'A' 'G' 'C' 'A' 'G' 'C' 'G' 'T' 'G' 'A' 'G' 'C' 'T' 'C' 'G'
+  'C' 'C' 'G' 'C' 'T' 'G' 'G' 'A' 'C' 'A' 'A' 'C' 'T' 'C' 'G' 'C' 'C' 'C'
+  'G' 'C' 'C' 'C' 'G' 'C' 'T' 'G' 'A' 'T' 'C' 'G' 'A' 'G' 'G' 'T' 'C' 'C'
+  'G' 'G' 'C' 'G' 'G' 'A' 'T' 'C' 'G' 'G' 'G' 'T' 'G' 'G' 'T' 'G' 'G' 'C'
+  'G' 'T' 'A' 'T' 'C' 'T' 'G' 'T' '-' '-' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'T' 'C' 'G' 'A' 'G' 'G' 'T' 'T' 'G' 'T' 'T' 'G'
+  'G' 'T' 'G' 'G' 'G' 'T' 'T' 'C' 'G' 'T' 'C' 'G' 'A' 'G' 'C' 'A' 'G' 'C'
+  'A' 'G' 'C' 'G' 'C' 'G' 'G' 'T' 'G' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'A' 'C'
+  'A' 'G' 'G' 'A' 'G' 'C' 'A' 'G' 'A' 'G' 'C' 'G' 'G' 'T' 'C' 'A' 'G' 'C'
+  'C' 'C' 'G' 'A' 'G' 'C' 'A' 'G' 'C' 'G' 'T' 'G' 'A' 'G' 'C' 'T' 'C' 'G'
+  'C' 'C' 'G' 'C' 'T' 'G' 'G' 'A' 'C' 'A' 'A' 'C' 'T' 'C' 'G' 'C' 'C' 'C'
+  'G' 'C' 'C' 'C' 'G' 'C' 'T' 'G' 'A' 'T' 'C' 'G' 'A' 'G' '-' '-' 'C' 'C'
+  'G' 'G' 'C' 'C' 'G' 'A' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' 'G' 'A'
+  'T' 'C' 'A' 'C' 'C' 'C' 'G' 'C' 'T' 'A' 'C' 'C' 'G']]
+2019-06-21 10:00:07,842 	pid=21449 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'C' 'C' 'G' 'C' 'G' 'C' 'C' 'G' 'T' 'G'
+  'A' 'T' 'C' 'A' 'G' 'G' 'A' 'G' 'T' 'T' 'C' 'G' 'A' 'T' 'G' 'G' 'T' 'C'
+  'G' 'G' 'C' 'G' 'C' 'C' 'A' 'G' 'C' 'A' 'G' 'C' 'G' 'C' 'G' 'A' 'A' 'A'
+  'A' 'T' 'G' 'C' 'T' 'G' 'G' 'C' 'G' 'G' 'C' 'A' 'A' 'G' 'G' 'T' 'A' 'G'
+  'A' 'T' 'G' 'C' 'C' 'C' 'A' 'T' 'G' 'A' 'A' 'A' 'G' 'C' 'G' 'A' 'T' 'G'
+  'G' 'T' 'G' 'A' 'C' 'G' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'C' 'C' 'G' 'C' 'G' 'C' 'C' 'G' 'T' 'G'
+  'A' 'T' 'C' 'A' 'G' 'G' 'A' 'G' 'T' 'T' 'C' 'G' 'A' 'T' 'G' 'G' 'T' 'C'
+  'G' 'G' 'C' 'G' 'C' 'C' 'A' 'G' 'C' 'A' 'G' 'C' 'G' 'C' 'A' 'A' 'A' 'A'
+  'A' 'T' 'G' 'C' 'T' 'G' 'G' 'C' 'G' 'G' 'C' 'A' 'A' 'G' 'G' 'T' 'A' 'G'
+  'A' 'T' 'G' 'C' 'C' 'C' 'A' 'T' 'G' 'A' 'A' 'A' 'G' 'C' 'G' 'A' 'T' 'G'
+  'G' 'T' 'G' 'A' 'C' 'G' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'C' 'C' 'G' 'C' 'G' 'C' 'C' 'G' 'T' 'G'
+  'A' 'T' 'C' 'A' 'G' 'G' 'A' 'G' 'T' 'T' 'C' 'G' 'A' 'T' 'G' 'G' 'T' 'C'
+  'G' 'G' 'C' 'G' 'C' 'C' 'A' 'G' 'C' 'A' 'G' 'C' 'G' 'C' 'A' 'A' 'A' 'A'
+  'A' 'T' 'G' 'C' 'T' 'G' 'G' 'C' 'G' 'G' 'C' 'A' 'A' 'G' 'G' 'T' 'A' 'G'
+  'A' 'T' 'G' 'C' 'C' 'C' 'A' 'T' 'G' 'A' 'A' 'A' 'G' 'C' 'G' 'A' 'T' 'G'
+  'G' 'T' 'G' 'A' 'C' 'G' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:07,859 	pid=21510 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'G' 'G' 'T' 'C' 'C' 'G' 'C' 'C' 'G' 'C' 'T' 'G'
+  'T' 'C' 'A' 'C' 'C' 'C' 'A' 'A' 'A' 'C' 'A' 'G' 'G' 'A' 'G' 'T' 'C' 'C'
+  'A' 'C' 'G' 'T' 'T' 'C' 'A' 'T' 'T' 'T' 'G' 'G' 'C' 'C' 'A' 'C' 'C' 'G'
+  'G' 'C' 'A' 'C' 'A' 'T' 'A' 'G' 'C' 'T' 'G' 'C' 'T' 'T' 'G' 'T' 'A' 'C'
+  'C' 'A' 'G' 'A' 'T' 'C' 'T' 'G' 'C' 'G' 'C' 'G' 'G' 'T' 'C' 'C' 'G' 'A'
+  'C' 'T' 'G' 'T' 'A' 'T' 'G' 'C' 'T' 'T' 'C' 'T' 'T' 'T' 'A' 'C' 'A' 'C'
+  'T' 'G' 'T' 'T' 'C' 'G' 'T' 'T' 'G' 'G' 'C' 'C' 'A' 'C' 'T' 'A' 'G' 'T'
+  'G' 'G' 'T' 'A' 'G' 'C' 'T' 'T' 'C' 'G' 'C' 'T' 'T' 'G' 'C' 'A' 'G' 'G'
+  'A' 'G' 'G' 'T' 'C' 'C' 'T' 'G' 'A' 'C' 'T' 'G' 'C' 'G' 'C' 'G' 'G' 'A'
+  'C' 'C' 'C' 'A' 'A' 'T' 'T' 'C' 'C' 'G' 'T' 'C' 'G' 'C' 'G' 'C' 'C' 'C'
+  'C' 'A' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'G' 'T' 'C' 'C' 'G' 'C' 'C' 'G' 'C' 'T' 'G'
+  'T' 'C' 'A' 'C' 'C' 'C' 'A' 'A' 'A' 'C' 'A' 'G' 'G' 'A' 'G' 'T' 'C' 'C'
+  'A' 'C' 'G' 'T' 'T' 'C' 'A' 'T' 'T' 'T' 'G' 'G' 'C' 'C' 'A' 'C' 'C' 'G'
+  'G' 'C' 'A' 'C' 'A' 'T' 'A' 'G' 'C' 'T' 'G' 'C' 'T' 'T' 'G' 'T' 'A' 'C'
+  'C' 'A' 'G' 'A' 'T' 'C' 'T' 'G' 'C' 'G' 'T' 'G' 'G' 'T' 'C' 'C' 'G' 'A'
+  'C' 'T' 'G' 'T' 'A' 'T' 'A' 'C' 'T' 'T' 'C' 'T' 'T' 'T' 'A' 'C' 'A' 'C'
+  'T' 'G' 'T' 'T' 'C' 'G' 'T' 'A' 'G' 'G' 'C' 'C' 'A' 'C' 'T' 'A' 'G' 'T'
+  'G' 'G' 'T' 'A' 'G' 'C' 'T' 'T' 'C' 'G' 'C' 'T' 'T' 'G' 'C' 'A' 'G' 'G'
+  'A' 'G' 'G' 'T' 'C' 'C' 'T' 'G' 'A' 'C' 'T' 'G' 'C' 'G' 'C' 'G' 'G' 'G'
+  'C' 'C' 'C' 'A' 'A' 'T' 'T' 'C' 'C' 'G' 'T' 'C' 'G' 'C' 'T' 'C' 'C' 'C'
+  'C' 'A' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'G' 'T' 'C' 'C' 'G' 'C' 'C' 'G' 'C' 'T' 'G'
+  'T' 'C' 'A' 'C' 'C' 'C' 'A' 'A' 'A' 'C' 'A' 'G' 'G' 'A' 'G' 'T' 'C' 'C'
+  'A' 'C' 'G' 'T' 'T' 'C' 'A' 'T' 'T' 'T' 'G' 'G' 'C' 'C' 'A' 'C' 'C' 'G'
+  'G' 'C' 'A' 'C' 'A' 'T' 'A' 'G' 'C' 'T' 'G' 'C' 'T' 'T' 'G' 'T' 'A' 'C'
+  'C' 'A' 'G' 'A' 'T' 'C' 'T' 'G' 'C' 'G' 'T' 'G' 'G' 'T' 'C' 'C' 'G' 'A'
+  'C' 'T' 'G' 'T' 'A' 'T' 'A' 'C' 'T' 'T' 'C' 'T' 'T' 'T' 'A' 'C' 'A' 'C'
+  'T' 'G' 'T' 'T' 'C' 'G' 'T' 'A' 'G' 'G' 'C' 'C' 'A' 'C' 'T' 'A' 'G' 'T'
+  'G' 'G' 'T' 'A' 'G' 'C' 'T' 'T' 'C' 'G' 'C' 'T' 'T' 'G' 'C' 'A' 'G' 'G'
+  'A' 'G' 'G' 'T' 'C' 'C' 'T' 'G' 'A' 'C' 'T' 'G' 'C' 'G' 'C' 'G' 'G' 'G'
+  'C' 'C' 'N' 'A' 'A' 'T' 'T' 'C' 'C' 'G' 'T' 'C' 'G' 'C' 'T' 'C' 'C' 'C'
+  'C' 'A' 'A' 'C' 'C' 'G']]
+2019-06-21 10:00:07,997 	pid=21495 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'T' 'G' 'A' 'C' 'T' 'G' 'A' 'T' 'G' 'A'
+  'A' 'A' 'C' 'A' 'T' 'C' 'A' 'A' 'A' 'A' 'A' 'G' 'G' 'T' 'T' 'T' 'G' 'A'
+  'T' 'T' 'G' 'G' 'G' 'C' 'T' 'T' 'G' 'A' 'T' 'C' 'G' 'C' 'A' 'A' 'T' 'A'
+  'T' 'C' 'C' 'C' 'T' 'G' 'T' 'A' 'A' 'A' 'C' 'G' 'C' 'T' 'T' 'T' 'C' 'A'
+  'T' 'C' 'T' 'T' 'C' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'T' 'A' 'A' 'A' 'C' 'T'
+  'C' 'T' 'G' 'A' 'A' 'T' 'T' 'T' 'C' 'A' 'A' 'T' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'T' 'G' 'A' 'C' 'T' 'G' 'A' 'T' 'G' 'A'
+  'A' 'A' 'C' 'A' 'T' 'C' 'A' 'A' 'A' 'A' 'A' 'G' 'G' 'T' 'T' 'T' 'G' 'A'
+  'T' 'T' 'G' 'G' 'G' 'C' 'T' 'T' 'G' 'A' 'T' 'C' 'G' 'C' 'A' 'A' 'T' 'A'
+  'T' 'C' 'C' 'C' 'T' 'G' 'T' 'A' 'A' 'A' 'C' 'G' 'C' 'T' 'T' 'T' 'C' 'A'
+  'T' 'C' 'T' 'T' 'C' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'T' 'A' 'A' 'A' 'C' 'T'
+  'C' 'T' 'G' 'A' 'A' 'T' 'T' 'T' 'C' 'A' 'A' 'T' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'T' 'G' 'A' 'C' 'T' 'G' 'A' 'T' 'G' 'A'
+  'A' 'A' 'C' 'A' 'T' 'C' 'A' 'A' 'A' 'A' 'A' 'G' 'G' 'T' 'T' 'T' 'G' 'A'
+  'T' 'T' 'G' 'G' 'G' 'C' 'T' 'T' 'G' 'A' 'T' 'C' 'G' 'C' 'A' 'A' 'T' 'A'
+  'T' 'C' 'C' 'C' 'T' 'G' 'T' 'A' 'A' 'A' 'C' 'G' 'C' 'T' 'T' 'T' 'C' 'A'
+  'T' 'C' 'T' 'T' 'C' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'T' 'A' 'A' 'A' 'C' 'T'
+  'C' 'T' 'G' 'A' 'A' 'T' 'T' 'T' 'C' 'A' 'A' 'T' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'T' 'G' 'A' 'C' 'T' 'G' 'A' 'T' 'G' 'A'
+  'A' 'A' 'C' 'A' 'T' 'C' 'A' 'A' 'A' 'A' 'A' 'G' 'G' 'T' 'T' 'T' 'G' 'A'
+  'T' 'T' 'G' 'G' 'G' 'C' 'T' 'T' 'G' 'A' 'T' 'C' 'G' 'C' 'A' 'A' 'T' 'A'
+  'T' 'C' 'C' 'C' 'T' 'G' 'T' 'A' 'A' 'A' 'C' 'G' 'C' 'T' 'T' 'T' 'C' 'A'
+  'T' 'C' 'T' 'T' 'C' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'T' 'A' 'A' 'A' 'C' 'T'
+  'C' 'T' 'G' 'A' 'A' 'T' 'T' 'T' 'C' 'A' 'A' 'T' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'T' 'G' 'A' 'C' 'T' 'G' 'A' 'T' 'G' 'A'
+  'A' 'A' 'C' 'A' 'T' 'C' 'A' 'A' 'A' 'A' 'A' 'G' 'G' 'T' 'T' 'T' 'G' 'A'
+  'T' 'T' 'G' 'G' 'G' 'C' 'T' 'T' 'G' 'A' 'T' 'C' 'G' 'C' 'A' 'A' 'T' 'A'
+  'T' 'C' 'C' 'C' 'T' 'G' 'T' 'A' 'A' 'A' 'C' 'G' 'C' 'T' 'T' 'T' 'C' 'A'
+  'T' 'C' 'T' 'T' 'C' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'T' 'A' 'A' 'A' 'C' 'T'
+  'C' 'T' 'G' 'A' 'A' 'T' 'T' 'T' 'C' 'A' 'A' 'T' 'A' 'C' 'C' 'G']]
+2019-06-21 10:00:08,010 	pid=21495 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'T' 'G' 'C' 'C' 'G' 'T' 'T' 'G' 'C' 'K' 'T'
+  'A' 'C' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'G' 'C' 'A' 'A' 'G' 'G' 'A' 'C' 'G'
+  'R' 'C' 'G' 'G' 'C' 'T' 'A' 'T' 'T' 'T' 'C' 'G' 'A' 'A' 'G' 'G' 'G' 'A'
+  'T' 'G' 'C' 'G' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'A' 'T' 'G' 'C' 'A' 'G' 'C'
+  'G' 'C' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'C' 'C' 'G' 'C' 'T' 'T' 'C' 'T'
+  'C' 'G' 'G' 'C' 'G' 'G' 'G' 'G' 'C' 'T' 'T' 'T' 'C' 'G' 'T' 'C' 'G' 'C'
+  'T' 'C' 'G' 'G' 'A' 'T' 'T' 'T' 'C' 'C' 'C' 'G' 'T' 'G' 'T' 'T' 'G' 'C'
+  'C' 'G' 'A' 'G' 'C' 'C' 'A' 'A' 'G' 'G' 'G' 'A' 'C' 'S' 'T' 'A' 'T' 'T'
+  'T' 'C' 'A' 'T' 'C' 'A' 'A' 'C' 'G' 'T' 'C' 'G' 'A' 'C' 'C' 'T' 'C' 'G'
+  'C' 'G' 'C' 'C' 'G' 'C' 'T' 'C' 'G' 'G' 'S' 'Y' 'T' 'S' 'r' 'A' 'C' 'G'
+  'A' 'r' 'G' 'A' 'C' 'G' 'A' 'C' 'G' 'A' 'r' 'R' 'C' 'r' 'T' 'T' 'C' 'T'
+  'G' 'C' 'C' 'G' 'G' 'T' 'T' 'G' 'T' 'T' 'G' 'T' 'G' 'G' 'T' 'G' 'C' 'C'
+  'G' 'A' 'A' 'C' 'A' 'A' 'C' 'A' 'T' 'G' 'C' 'T' 'T' 'G' 'A' 'C' 'C' 'A'
+  'G' 'T' 'T' 'C' 'G' 'C' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'T' 'G' 'C' 'C' 'G' 'T' 'T' 'G' 'C' 'K' 'T'
+  'A' 'C' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'G' 'C' 'A' 'A' 'G' 'G' 'A' 'C' 'G'
+  'R' 'C' 'G' 'G' 'C' 'T' 'A' 'T' 'T' 'T' 'C' 'G' 'A' 'A' 'G' 'G' 'G' 'A'
+  'T' 'G' 'C' 'G' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'A' 'T' 'G' 'C' 'A' 'G' 'C'
+  'G' 'C' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'C' 'C' 'G' 'C' 'T' 'T' 'C' 'T'
+  'C' 'G' 'G' 'C' 'G' 'G' 'G' 'G' 'C' 'T' 'T' 'T' 'C' 'G' 'T' 'C' 'G' 'C'
+  'T' 'C' 'G' 'G' 'A' 'T' 'T' 'T' 'C' 'C' 'C' 'G' 'T' 'G' 'T' 'T' 'G' 'C'
+  'C' 'G' 'A' 'G' 'C' 'C' 'A' 'A' 'G' 'G' 'G' 'A' 'C' 'S' 'T' 'A' 'T' 'T'
+  'T' 'C' 'A' 'T' 'C' 'A' 'A' 'C' 'G' 'T' 'C' 'G' 'A' 'C' 'C' 'T' 'C' 'G'
+  'C' 'G' 'C' 'C' 'G' 'C' 'T' 'C' 'G' 'G' 'S' 'Y' 'T' 'S' 'r' 'A' 'C' 'G'
+  'A' 'r' 'G' 'A' 'C' 'G' 'A' 'C' 'G' 'A' 'r' 'R' 'C' 'r' 'T' 'T' 'C' 'T'
+  'G' 'C' 'C' 'G' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' 'A' 'C' 'A' 'C' 'G' 'A' 'T' 'G' 'A' 'A' 'C' '-' '-'
+  '-' '-' '-' '-' '-' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,126 	pid=21505 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'C' 'T' 'G' 'C' 'G' 'C' 'G' 'A' 'G' 'C'
+  'C' 'C' 'G' 'T' 'C' 'A' 'T' 'C' 'G' 'T' 'G' 'G' 'T' 'C' 'G' 'G' 'T' 'C'
+  'A' 'G' 'G' 'T' 'G' 'C' 'A' 'G' 'C' 'C' 'G' 'C' 'A' 'G' 'C' 'A' 'C' 'C'
+  'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'C' 'T' 'G' 'C' 'G' 'C' 'G' 'A' 'G' 'C'
+  'C' 'C' 'G' 'T' 'C' 'A' 'T' 'C' 'G' 'T' 'G' 'G' 'T' 'C' 'G' 'G' 'T' 'C'
+  'A' 'G' 'G' 'T' 'G' 'C' 'A' 'G' 'C' 'C' 'G' 'C' 'A' 'G' 'C' 'A' 'C' 'C'
+  'G']]
+2019-06-21 10:00:08,138 	pid=21505 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'C' 'A' 'C' 'T'
+  'C' 'G' 'A' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'T' 'T' 'C' 'A'
+  'C' 'C' 'C' 'A' 'T' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'A' 'C' 'T'
+  'A' 'C' 'T' 'T' 'C' 'G' 'A' 'C' 'T' 'G' 'G' 'G' 'C' 'C' 'C' 'G' 'T' 'C'
+  'G' 'C' 'G' 'A' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'C' 'A' 'C' 'T'
+  'C' 'G' 'A' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'T' 'T' 'C' 'A'
+  'C' 'C' 'C' 'A' 'T' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'A' 'C' 'T'
+  'A' 'C' 'T' 'T' 'C' 'G' 'A' 'C' 'T' 'G' 'G' 'G' 'C' 'C' 'C' 'G' 'T' 'C'
+  'G' 'C' 'G' 'A' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'C' 'A' 'C' 'T'
+  'C' 'G' 'A' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'T' 'T' 'C' 'A'
+  'C' 'C' 'C' 'A' 'T' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'A' 'C' 'T'
+  'A' 'C' 'T' 'T' 'C' 'G' 'A' 'C' 'T' 'G' 'G' 'G' 'C' 'C' 'C' 'G' 'T' 'C'
+  'G' 'C' 'G' 'A' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'C' 'A' 'C' 'T'
+  'C' 'G' 'A' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'T' 'T' 'C' 'A'
+  'C' 'C' 'C' 'A' 'T' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'A' 'C' 'T'
+  'A' 'C' 'T' 'T' 'C' 'G' 'A' 'C' 'T' 'G' 'G' 'G' 'C' 'C' 'C' 'G' 'T' 'C'
+  'G' 'C' 'G' 'A' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'C' 'A' 'C' 'T'
+  'C' 'G' 'A' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'T' 'T' 'C' 'A'
+  'C' 'C' 'C' 'A' 'T' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'A' 'C' 'T'
+  'A' 'C' 'T' 'T' 'C' 'G' 'A' 'C' 'T' 'G' 'G' 'G' 'C' 'C' 'C' 'G' 'T' 'C'
+  'G' 'C' 'G' 'A' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,145 	pid=21505 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'T' 'A' 'C' 'T' 'T' 'C' 'C' 'T' 'G' 'C' 'G' 'T'
+  'T' 'C' 'G' 'G' 'T' 'A' 'G' 'C' 'C' 'G' 'A' 'T' 'A' 'T' 'G' 'A' 'T' 'G'
+  'G' 'A' 'A' 'C' 'T' 'C' 'C' 'A' 'G' 'T' 'A' 'T' 'C' 'C' 'C' 'A' 'C' 'C'
+  'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'T' 'A' 'C' 'T' 'T' 'C' 'C' 'T' 'G' 'C' 'G' 'T'
+  'T' 'C' 'G' 'G' 'T' 'A' 'G' 'C' 'C' 'G' 'A' 'T' 'A' 'T' 'G' 'A' 'T' 'G'
+  'G' 'A' 'A' 'C' 'T' 'C' 'C' 'A' 'G' 'T' 'A' 'T' 'C' 'C' 'C' 'A' 'C' 'C'
+  'G']]
+2019-06-21 10:00:08,153 	pid=21505 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'A' 'A' 'G' 'G' 'C' 'G' 'G' 'T' 'T' 'A'
+  'A' 'A' 'A' 'G' 'A' 'G' 'C' 'C' 'T' 'T' 'T' 'G' 'G' 'C' 'C' 'A' 'G' 'C'
+  'A' 'T' 'C' 'A' 'G' 'C' 'G' 'G' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'T' 'C' 'G'
+  'A' 'A' 'G' 'G' 'T' 'C' 'T' 'T' 'G' 'A' 'A' 'A' 'T' 'C' 'C' 'T' 'T' 'G'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'C' 'A' 'G' 'A' 'T' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'A' 'A' 'G' 'G' 'C' 'G' 'G' 'T' 'T' 'A'
+  'A' 'A' 'A' 'G' 'A' 'G' 'C' 'C' 'T' 'T' 'T' 'C' 'G' 'C' 'C' 'A' 'G' 'C'
+  'A' 'T' 'C' 'A' 'G' 'C' 'G' 'G' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'T' 'C' 'G'
+  'A' 'A' 'G' 'G' 'T' 'C' 'T' 'T' 'G' 'A' 'A' 'G' 'T' 'C' 'C' 'T' 'T' 'G'
+  'A' 'G' 'C' 'T' 'G' 'T' 'A' 'C' 'A' 'G' 'A' 'T' 'G' 'C' 'C' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'A' 'A' 'G' 'G' 'C' 'G' 'G' 'T' 'T' 'A'
+  'A' 'A' 'A' 'G' 'A' 'G' 'C' 'C' 'T' 'T' 'T' 'G' 'G' 'C' 'C' 'A' 'G' 'C'
+  'A' 'T' 'C' 'A' 'G' 'C' 'G' 'G' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'T' 'C' 'G'
+  'A' 'A' 'G' 'G' 'T' 'C' 'T' 'T' 'G' 'A' 'A' 'A' 'T' 'C' 'C' 'T' 'T' 'G'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'C' 'A' 'G' 'A' 'T' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'A' 'A' 'G' 'G' 'C' 'G' 'G' 'T' 'T' 'A'
+  'A' 'A' 'A' 'G' 'A' 'G' 'C' 'C' 'T' 'T' 'T' 'G' 'G' 'C' 'C' 'A' 'G' 'C'
+  'A' 'T' 'C' 'A' 'G' 'C' 'G' 'G' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'T' 'C' 'G'
+  'A' 'A' 'G' 'G' 'T' 'C' 'T' 'T' 'G' 'A' 'A' 'A' 'T' 'C' 'C' 'T' 'T' 'G'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'C' 'A' 'G' 'A' 'T' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,160 	pid=21505 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'T' 'G' 'C' 'A' 'T' 'T' 'T' 'G' 'G' 'C' 'C' 'A'
+  'A' 'T' 'A' 'C' 'C' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'G' 'G' 'A' 'A' 'T' 'C'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'C' 'C' 'C' 'A' 'G' 'G' 'C' 'A' 'T' 'T' 'C'
+  'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'T' 'G' 'C' 'A' 'T' 'T' 'T' 'G' 'G' 'C' 'C' 'A'
+  'A' 'T' 'A' 'C' 'C' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'G' 'G' 'A' 'A' 'T' 'C'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'C' 'C' 'C' 'A' 'G' 'G' 'C' 'A' 'T' 'T' 'C'
+  'C' 'G']]
+2019-06-21 10:00:08,166 	pid=21505 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'C' 'C' 'T' 'T' 'A' 'C' 'G' 'A' 'T' 'T'
+  'G' 'T' 'T' 'G' 'T' 'A' 'A' 'T' 'C' 'C' 'C' 'T' 'G' 'C' 'C' 'A' 'A' 'A'
+  'A' 'A' 'C' 'A' 'A' 'A' 'G' 'A' 'C' 'A' 'T' 'G' 'A' 'C' 'A' 'A' 'T' 'G'
+  'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'C' 'C' 'T' 'T' 'A' 'C' 'G' 'A' 'T' 'T'
+  'G' 'T' 'T' 'G' 'T' 'A' 'A' 'T' 'C' 'C' 'C' 'T' 'G' 'C' 'C' 'A' 'A' 'A'
+  'A' 'A' 'C' 'A' 'A' 'A' 'G' 'A' 'C' 'A' 'T' 'G' 'A' 'C' 'A' 'A' 'T' 'G'
+  'C' 'C' 'G']]
+2019-06-21 10:00:08,172 	pid=21505 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'A' 'C' 'T' 'G' 'C' 'C' 'A' 'G' 'G' 'C' 'A'
+  'T' 'A' 'G' 'C' 'G' 'C' 'T' 'G' 'G' 'G' 'A' 'C' 'G' 'A' 'G' 'A' 'T' 'G'
+  'T' 'A' 'G' 'A' 'C' 'G' 'T' 'G' 'C' 'T' 'C' 'G' 'T' 'A' 'G' 'A' 'G' 'A'
+  'T' 'G' 'C' 'T' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'G' 'T' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'A' 'C' 'T' 'G' 'C' 'C' 'A' 'G' 'G' 'C' 'A'
+  'T' 'A' 'G' 'C' 'G' 'C' 'T' 'G' 'G' 'G' 'A' 'C' 'G' 'A' 'G' 'A' 'T' 'G'
+  'T' 'A' 'G' 'A' 'C' 'G' 'T' 'G' 'C' 'T' 'C' 'G' 'T' 'A' 'G' 'A' 'G' 'A'
+  'T' 'G' 'C' 'T' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'G' 'T' 'A' 'C' 'C' 'G']]
+2019-06-21 10:00:08,242 	pid=21475 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'A' 'T' 'C' 'G' 'G' 'T' 'C' 'T' 'T' 'G'
+  'A' 'T' 'C' 'A' 'A' 'C' 'T' 'C' 'T' 'G' 'A' 'T' 'C' 'A' 'C' 'C' 'C' 'G'
+  'C' 'C' 'A' 'C' 'C' 'C' 'G' 'T' 'T' 'G' 'G' 'A' 'T' 'C' 'A' 'C' 'C' 'A'
+  'C' 'A' 'G' 'A' 'T' 'C' 'G' 'T' 'G' 'A' 'T' 'C' 'A' 'A' 'A' 'G' 'T' 'C'
+  'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'A' 'T' 'C' 'G' 'G' 'T' 'C' 'T' 'T' 'G'
+  'A' 'T' 'C' 'A' 'A' 'C' 'T' 'C' 'T' 'G' 'A' 'T' 'C' 'A' 'C' 'C' 'C' 'G'
+  'C' 'C' 'A' 'C' 'C' 'C' 'G' 'T' 'T' 'G' 'G' 'A' 'T' 'C' 'A' 'C' 'C' 'A'
+  'C' 'A' 'G' 'A' 'T' 'C' 'G' 'T' 'G' 'A' 'T' 'C' 'A' 'A' 'A' 'G' 'T' 'C'
+  'C' 'G']]
+2019-06-21 10:00:08,251 	pid=21501 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'T' 'T' 'G' 'A' 'C' 'C' 'G' 'A' 'T' 'C'
+  'G' 'G' 'G' 'T' 'C' 'C' 'G' 'C' 'G' 'A' 'C' 'G' 'G' 'A' 'T' 'T' 'C' 'C'
+  'T' 'C' 'G' 'A' 'A' 'C' 'T' 'G' 'G' 'G' 'C' 'C' 'G' 'C' 'A' 'A' 'G' 'C'
+  'A' 'T' 'G' 'G' 'C' 'G' 'T' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'T' 'T' 'G' 'A' 'C' 'C' 'G' 'A' 'T' 'C'
+  'G' 'G' 'G' 'T' 'C' 'C' 'G' 'C' 'G' 'A' 'C' 'G' 'G' 'A' 'T' 'T' 'C' 'C'
+  'T' 'C' 'G' 'A' 'A' 'C' 'T' 'G' 'G' 'G' 'C' 'C' 'G' 'C' 'A' 'A' 'G' 'C'
+  'A' 'T' 'G' 'G' 'C' 'G' 'T' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,254 	pid=21475 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'C' 'C' 'A' 'T' 'T' 'T' 'G' 'C' 'A' 'G' 'A'
+  'T' 'A' 'C' 'G' 'C' 'A' 'C' 'A' 'G' 'T' 'C' 'T' 'T' 'C' 'C' 'G' 'C' 'A'
+  'T' 'C' 'G' 'A' 'G' 'G' 'G' 'C' 'G' 'C' 'A' 'A' 'G' 'A' 'A' 'C' 'C' 'C'
+  'T' 'G' 'A' 'A' 'C' 'C' 'A' 'G' 'C' 'T' 'C' 'T' 'A' 'T' 'C' 'A' 'C' 'A'
+  'A' 'T' 'C' 'T' 'G' 'T' 'T' 'T' 'T' 'C' 'A' 'C' 'G' 'C' 'G' 'C' 'C' 'G'
+  'C' 'G' 'A' 'T' 'G' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'A' 'A' 'T' 'A' 'T' 'G'
+  'C' 'G' 'T' 'T' 'C' 'C' 'G' 'C' 'C' 'G' 'T' 'T' 'C' 'n' 'n' 'n' 'n' 'G'
+  'T' 'T' 'C' 'C' 'G' 'C' 'C' 'G' 'T' 'T' 'C' 'G' 'G' 'G' 'G' 'C' 'C' 'G'
+  'C' 'T' 'T' 'T' 'C' 'C' 'A' 'T' 'G' 'G' 'C' 'T' 'C' 'C' 'G' 'A' 'G' 'C'
+  'C' 'A' 'G' 'C' 'T' 'C' 'G' 'G' 'C' 'A' 'T' 'T' 'T' 'T' 'T' 'G' 'C' 'A'
+  'A' 'A' 'A' 'A' 'G' 'C' 'G' 'A' 'T' 'C' 'C' 'C' 'G' 'C' 'G' 'C' 'T' 'G'
+  'C' 'T' 'G' 'A' 'C' 'G' 'C' 'C' 'C' 'G' 'A' 'C' 'C' 'T' 'T' 'G' 'A' 'A'
+  'T' 'A' 'T' 'C' 'A' 'T' 'G' 'T' 'G' 'C' 'A' 'G' 'C' 'C' 'C' 'T' 'T' 'G'
+  'A' 'G' 'C' 'A' 'C' 'G' 'G' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'C' 'C' 'A' 'T' 'T' 'T' 'G' 'C' 'A' 'G' 'A'
+  'T' 'A' 'C' 'G' 'C' 'A' 'C' 'A' 'G' 'T' 'C' 'T' 'T' 'C' 'C' 'G' 'C' 'A'
+  'T' 'C' 'G' 'A' 'G' 'G' 'G' 'C' 'G' 'C' 'A' 'A' 'G' 'A' 'A' 'C' 'C' 'C'
+  'T' 'G' 'A' 'A' 'C' 'C' 'A' 'G' 'C' 'T' 'C' 'T' 'A' 'T' 'C' 'A' 'C' 'A'
+  'A' 'T' 'C' 'T' 'G' 'T' 'T' 'T' 'T' 'C' 'A' 'N' 'G' 'C' 'G' 'C' 'C' 'G'
+  'C' 'G' 'A' 'T' 'G' 'G' 'G' 'G' 'C' 'T' 'C' 'G' 'A' 'A' 'T' 'A' 'T' 'G'
+  'C' 'G' 'T' 'T' 'C' 'C' 'G' 'C' 'C' 'G' 'T' 'T' '-' 'n' 'n' 'n' 'n' 'G'
+  'T' 'T' 'C' 'C' 'G' 'C' 'C' 'G' 'T' 'T' 'C' 'G' 'G' 'G' 'G' 'C' 'C' 'G'
+  'C' 'T' 'T' 'T' 'C' 'C' 'A' 'T' 'G' 'G' 'C' 'T' 'C' 'C' 'G' 'A' 'G' 'C'
+  'C' 'A' 'G' 'C' 'T' 'C' 'G' 'G' 'C' 'A' 'T' 'T' 'T' 'T' 'T' 'G' 'C' 'A'
+  'A' 'A' 'A' 'A' 'G' 'C' 'G' 'A' 'T' 'C' 'C' 'C' 'G' 'C' 'G' 'C' 'T' 'G'
+  'C' 'T' 'G' 'A' 'C' 'G' 'C' 'C' 'C' 'G' 'A' 'C' 'C' 'T' 'T' 'G' 'A' 'A'
+  'T' 'A' 'T' 'C' 'A' 'T' 'G' 'T' 'G' 'C' 'A' 'G' 'C' 'C' 'C' 'T' 'T' 'G'
+  'A' 'G' 'C' 'A' 'C' 'G' 'G' 'A' 'C' 'C' 'G']]
+2019-06-21 10:00:08,271 	pid=21475 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'A' 'G' 'C' 'G' 'G' 'C' 'G'
+  'C' 'C' 'T' 'G' 'G' 'G' 'A' 'G' 'C' 'A' 'G' 'C' 'A' 'G' 'C' 'G' 'C' 'C'
+  'T' 'T' 'T' 'T' 'T' 'G' 'A' 'A' 'A' 'A' 'C' 'A' 'T' 'C' 'G' 'A' 'C' 'G'
+  'G' 'C' 'A' 'T' 'T' 'A' 'A' 'G' 'C' 'T' 'G' 'C' 'T' 'G' 'T' 'C' 'G' 'C'
+  'A' 'T' 'A' 'C' 'G' 'C' 'T' 'G' 'G' 'G' 'C' 'T' 'G' 'C' 'G' 'G' 'G' 'G'
+  'G' 'C' 'A' 'C' 'C' 'C' 'G' 'T' 'C' 'A' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'A'
+  'G' 'G' 'G' 'C' 'C' 'C' 'T' 'C' 'T' 'G' 'C' 'G' 'G' 'A' 'C' 'T' 'G' 'C'
+  'T' 'G' 'G' 'C' 'A' 'G' 'G' 'C' 'T' 'A' 'T' 'A' 'T' 'C' 'A' 'C' 'C' 'C'
+  'A' 'T' 'C' 'C' 'C' 'A' 'A' 'C' 'G' 'T' 'T' 'G' 'C' 'C' 'G' 'G' 'A' 'C'
+  'C' 'A' 'C' 'G' 'A' 'G' 'C' 'G' 'A' 'T' 'G' 'C' 'G' 'G' 'A' 'C' 'G' 'T'
+  'G' 'G' 'A' 'G' 'A' 'C' 'G' 'G' 'G' 'T' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'A' 'G' 'G' 'C' 'A' 'G' 'C' 'G' 'G' 'C' 'G'
+  'C' 'C' 'T' 'G' 'G' 'G' 'A' 'G' 'C' 'A' 'G' 'C' 'A' 'G' 'C' 'G' 'C' 'C'
+  'T' 'T' 'T' 'T' 'T' 'C' 'A' 'A' 'A' 'A' 'C' 'A' 'T' 'C' 'G' 'A' 'C' 'G'
+  'G' 'C' 'A' 'T' 'T' 'A' 'A' 'A' 'C' 'T' 'A' 'C' 'T' 'G' 'T' 'C' 'G' 'C'
+  'A' 'T' 'A' 'C' 'C' 'C' 'T' 'G' 'G' 'G' 'C' 'T' 'G' 'C' 'G' 'G' 'G' 'G'
+  'G' 'C' 'A' 'C' 'C' 'C' 'G' 'T' 'C' 'A' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'A'
+  'G' 'G' 'G' 'C' 'C' 'C' 'T' 'C' 'T' 'G' 'C' 'G' 'G' 'A' 'C' 'T' 'G' 'C'
+  'T' 'G' 'G' 'C' 'A' 'G' 'G' 'C' 'T' 'A' 'T' 'A' 'T' 'C' 'A' 'C' 'C' 'C'
+  'A' 'T' 'C' 'C' 'C' 'A' 'A' 'C' 'G' 'T' 'T' 'G' 'C' 'C' 'G' 'G' 'C' 'C'
+  'C' 'G' 'T' 'G' 'C' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' 'C' 'A' 'T' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'R' 'G' 'G' 'C' 'A' 's' 'Y' 'G' 'G' 'C' 'G'
+  'C' 'C' 'T' 'G' 'G' 'G' 'A' 'G' 'C' 'A' 'G' 'C' 'A' 'G' 'C' 'G' 'C' 'C'
+  'T' 'T' 'T' 'T' 'T' 'N' 'A' 'R' 'A' 'A' 'Y' 'A' 'T' 'C' 'G' 'A' 'C' 'G'
+  'G' 'C' 'A' 'T' 'y' 'A' 'A' 'R' 'C' 'T' 'R' 'C' 'T' 'G' 'T' 'C' 'G' 'C'
+  'A' 'T' 'A' 'C' 'N' 'C' 'T' 'G' 'G' 'G' 'C' 'T' 'G' 'C' 'G' 'G' 'G' 'G'
+  'G' 'C' 'A' 'C' 'C' 'C' 'G' 'T' 'C' 'A' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'A'
+  'G' 'G' 'G' 'C' 'C' 'C' 'T' 'C' 'T' 'G' 'C' 'G' 'G' 'A' 'C' 'T' 'G' 'C'
+  'T' 'G' 'G' 'C' 'A' 'G' 'G' 'C' 'T' 'A' 'T' 'A' 'T' 'C' 'A' 'C' 'C' 'C'
+  'A' 'T' 'C' 'C' 'C' 'A' 'A' 'C' 'G' 'T' 'T' 'G' 'C' 'C' 'G' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']]
+2019-06-21 10:00:08,276 	pid=21475 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'A' 'T' 'C' 'G' 'C' 'G' 'G' 'A' 'C' 'C'
+  'G' 'A' 'G' 'G' 'T' 'C' 'A' 'G' 'C' 'A' 'A' 'C' 'A' 'G' 'T' 'G' 'G' 'C'
+  'C' 'T' 'G' 'G' 'G' 'A' 'T' 'T' 'T' 'G' 'C' 'C' 'G' 'C' 'T' 'T' 'C' 'G'
+  'A' 'T' 'G' 'G' 'C' 'A' 'T' 'C' 'C' 'A' 'G' 'C' 'A' 'A' 'T' 'G' 'G' 'C'
+  'A' 'G' 'A' 'A' 'G' 'C' 'T' 'C' 'G' 'A' 'A' 'T' 'C' 'G' 'C' 'A' 'T' 'T'
+  'T' 'G' 'C' 'C' 'T' 'G' 'C' 'G' 'C' 'C' 'C' 'G' 'A' 'A' 'C' 'G' 'G' 'A'
+  'A' 'A' 'G' 'G' 'C' 'T' 'T' 'C' 'A' 'A' 'T' 'G' 'A' 'T' 'G' 'A' 'C' 'G'
+  'A' 'T' 'A' 'T' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'A' 'T' 'C' 'G' 'C' 'G' 'G' 'A' 'C' 'C'
+  'G' 'A' 'G' 'G' 'T' 'C' 'A' 'G' 'C' 'A' 'A' 'C' 'A' 'G' 'T' 'G' 'G' 'C'
+  'C' 'T' 'G' 'G' 'G' 'A' 'T' 'T' 'T' 'G' 'C' 'C' 'G' 'C' 'T' 'T' 'C' 'G'
+  'A' 'T' 'G' 'G' 'C' 'A' 'T' 'C' 'C' 'A' 'G' 'C' 'A' 'A' 'T' 'G' 'G' 'C'
+  'A' 'G' 'A' 'A' 'G' 'C' 'T' 'C' 'G' 'A' 'A' 'T' 'C' 'G' 'C' 'A' 'T' 'T'
+  'T' 'G' 'C' 'C' 'T' 'G' 'C' 'G' 'C' 'C' 'C' 'G' 'A' 'A' 'C' 'G' 'G' 'A'
+  'A' 'A' 'G' 'G' 'C' 'T' 'T' 'C' 'A' 'A' 'T' 'G' 'A' 'T' 'G' 'A' 'C' 'G'
+  'A' 'T' 'A' 'T' 'C' 'C' 'G']]
+2019-06-21 10:00:08,488 	pid=21506 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'C' 'G' 'G' 'A' 'G' 'A'
+  'A' 'T' 'T' 'A' 'T' 'G' 'A' 'T' 'T' 'T' 'C' 'T' 'C' 'C' 'T' 'T' 'G' 'T'
+  'C' 'G' 'G' 'G' 'T' 'G' 'C' 'C' 'T' 'G' 'G' 'C' 'G' 'A' 'C' 'A' 'G' 'A'
+  'A' 'T' 'G' 'A' 'C' 'G' 'G' 'C' 'T' 'T' 'C' 'A' 'A' 'T' 'A' 'T' 'T' 'T'
+  'C' 'C' 'G' 'A' 'C' 'T' 'T' 'C' 'G' 'G' 'G' 'T' 'C' 'C' 'G' 'A' 'A' 'A'
+  'A' 'G' 'G' 'A' 'T' 'G' 'G' 'C' 'G' 'A' 'C' 'C' 'G' 'T' 'A' 'A' 'C' 'G'
+  'G' 'C' 'A' 'C' 'G' 'G' 'T' 'C' 'A' 'A' 'T' 'G' 'A' 'A' 'T' 'G' 'G' 'C'
+  'A' 'A' 'G' 'T' 'T' 'C' 'A' 'A' 'G' 'G' 'T' 'T' 'G' 'A' 'T' 'C' 'T' 'G'
+  'A' 'C' 'A' 'C' 'C' 'A' 'G' 'A' 'C' 'G' 'T' 'C' 'G' 'T' 'G' 'G' 'T' 'C'
+  'G' 'A' 'C' 'G' 'G' 'C' 'A' 'C' 'C' 'T' 'T' 'C' 'C' 'G' 'T' 'T' 'A' 'C'
+  'G' 'T' 'A' 'A' 'A' 'C' 'C' 'G' 'C' 'A' 'A' 'A' 'A' 'G' 'T' 'G' 'A' 'T'
+  'C' 'T' 'C' 'G' 'A' 'C' 'C' 'G' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'G' 'C' 'G'
+  'G' 'C' 'A' 'C' 'T' 'G' 'A' 'C' 'G' 'T' 'C' 'G' 'G' 'C' 'G' 'T' 'T' 'G'
+  'G' 'T' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'C' 'G' 'G' 'A' 'G' 'A'
+  'A' 'T' 'T' 'A' 'T' 'G' 'A' 'T' 'T' 'T' 'C' 'T' 'C' 'C' 'T' 'T' 'G' 'T'
+  'C' 'G' 'G' 'G' 'T' 'G' 'C' 'C' 'T' 'G' 'G' 'C' 'G' 'A' 'C' 'A' 'G' 'N'
+  'A' 'T' 'G' 'A' 'C' 'G' 'G' 'C' 'T' 'T' 'C' 'A' 'A' 'T' 'A' 'T' 'T' 'T'
+  'C' 'C' 'G' 'A' 'C' 'T' 'T' 'C' 'G' 'G' 'G' 'T' 'C' 'C' 'G' 'A' 'A' 'A'
+  'A' 'G' 'G' 'A' 'T' 'G' 'G' 'C' 'G' 'A' 'C' 'C' 'G' 'T' 'A' 'A' 'C' 'G'
+  'G' 'C' 'A' 'C' 'G' 'G' 'T' 'C' '-' '-' '-' '-' 'A' 'A' 'T' 'G' 'G' 'C'
+  'A' 'A' 'G' 'T' 'T' 'C' 'A' 'A' 'G' 'G' 'T' 'T' 'G' 'A' 'T' 'C' 'T' 'G'
+  'A' 'C' 'A' 'C' 'C' 'A' 'N' 'A' 'C' 'G' 'T' 'C' 'G' 'T' 'G' 'G' 'T' 'C'
+  'G' 'A' 'C' 'G' 'G' 'C' 'A' 'C' 'C' 'T' 'T' 'C' 'C' 'G' 'T' 'T' 'A' 'C'
+  'G' 'T' 'A' 'A' 'A' 'C' 'C' 'G' 'C' 'A' 'A' 'A' 'A' 'G' 'T' 'G' 'A' 'T'
+  'C' 'T' 'C' 'G' 'A' 'C' 'C' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'C' 'G' 'G' 'A' 'G' 'A'
+  'A' 'T' 'T' 'A' 'T' 'G' 'A' 'T' 'T' 'T' 'C' 'T' 'C' 'C' 'T' 'T' 'N' 'T'
+  'C' 'G' 'G' 'G' 'T' 'G' 'C' 'C' 'T' 'G' 'G' 'C' 'G' 'A' 'C' 'A' 'G' 'A'
+  'A' 'T' 'G' 'A' 'C' 'G' 'G' 'C' 'T' 'T' 'C' 'A' 'A' 'T' 'A' 'T' 'T' 'T'
+  'C' 'C' 'G' 'A' 'C' 'T' 'T' 'C' 'G' 'G' 'G' 'T' 'C' 'C' 'G' 'A' 'A' 'A'
+  'A' 'G' 'G' 'A' 'T' 'G' 'G' 'C' 'G' 'A' 'C' 'C' 'G' 'T' 'A' 'A' 'C' 'G'
+  'G' 'C' 'A' 'C' 'G' 'G' 'T' 'C' '-' '-' '-' '-' 'A' 'A' 'T' 'G' 'G' 'C'
+  'A' 'A' 'G' 'T' 'T' 'C' 'A' 'A' 'G' 'G' 'T' 'T' 'G' 'A' 'T' 'C' 'T' 'G'
+  'A' 'C' 'A' 'N' 'C' 'A' 'G' 'A' 'C' 'G' 'T' 'C' 'G' 'T' 'G' 'G' 'T' 'C'
+  'G' 'A' 'C' 'G' 'G' 'C' 'A' 'C' 'C' 'T' 'T' 'C' 'C' 'G' 'T' 'T' 'A' 'C'
+  'G' 'T' 'A' 'A' 'A' 'C' 'C' 'G' 'C' 'A' 'A' 'A' 'A' 'G' 'T' 'G' 'A' 'T'
+  'C' 'T' 'C' 'G' 'A' 'C' 'C' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-']]
+2019-06-21 10:00:08,511 	pid=21448 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'T' 'G' 'A' 'G' 'T' 'A' 'G' 'T' 'G' 'T' 'G' 'A'
+  'G' 'A' 'A' 'C' 'G' 'T' 'C' 'T' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'G' 'C' 'T'
+  'A' 'A' 'C' 'G' 'T' 'A' 'C' 'G' 'T' 'C' 'G' 'G' 'C' 'T' 'G' 'G' 'G' 'G'
+  'A' 'T' 'C' 'G' 'A' 'T' 'T' 'G' 'G' 'C' 'G' 'G' 'A' 'C' 'A' 'G' 'T' 'A'
+  'A' 'A' 'C' 'G' 'C' 'G' 'T' 'G' 'T' 'T' 'T' 'T' 'T' 'C' 'C' 'C' 'C' 'G'
+  'A' 'T' 'G' 'G' 'C' 'A' 'T' 'C' 'T' 'C' 'C' 'G' 'T' 'T' 'C' 'C' 'G' 'G'
+  'A' 'C' 'C' 'T' 'C' 'C' 'T' 'C' 'G' 'C' 'A' 'T' 'T' 'C' 'T' 'C' 'C' 'C'
+  'T' 'C' 'C' 'C' 'G' 'T' 'G' 'C' 'G' 'C' 'T' 'C' 'T' 'C' 'G' 'C' 'G' 'G'
+  'C' 'T' 'T' 'T' 'G' 'C' 'A' 'G' 'G' 'T' 'T' 'A' 'A' 'A' 'T' 'C' 'A' 'T'
+  'C' 'A' 'T' 'G' 'G' 'T' 'T' 'G' 'T' 'G' 'G' 'C' 'G' 'C' 'G' 'A' 'A' 'A'
+  'A' 'G' 'T' 'A' 'C' 'G' 'G' 'C' 'C' 'G' 'A' 'C' 'T' 'C' 'T' 'C' 'G' 'A'
+  'C' 'A' 'T' 'C' 'G' 'C' 'G' 'A' 'C' 'C' 'G' 'G' 'C' 'G' 'A' 'A' 'G' 'C'
+  'G' 'G' 'T' 'T' 'T' 'T' 'A' 'C' 'A' 'C' 'G' 'G' 'C' 'A' 'C' 'C' 'T' 'A'
+  'G' 'C' 'G' 'T' 'A' 'C' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'T' 'G' 'A' 'G' 'T' 'A' 'G' 'T' 'G' 'T' 'G' 'A'
+  'G' 'A' 'A' 'C' 'G' 'T' 'C' 'T' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'G' 'C' 'T'
+  'A' 'A' 'C' 'G' 'T' 'A' 'C' 'G' 'T' 'C' 'G' 'G' 'C' 'T' 'G' 'G' 'G' 'G'
+  'A' 'T' 'C' 'G' 'A' 'T' 'T' 'G' 'G' 'C' 'G' 'G' 'A' 'C' 'A' 'G' 'T' 'A'
+  'A' 'A' 'C' 'G' 'C' 'G' 'T' 'G' 'T' 'T' 'T' 'T' 'T' 'C' 'C' 'C' 'C' 'G'
+  'A' 'T' 'G' 'G' 'C' 'A' 'T' 'C' 'T' 'T' 'C' 'G' 'T' 'T' 'C' 'C' 'G' 'G'
+  'A' 'C' 'C' 'T' 'C' 'C' 'T' 'C' 'G' 'C' 'A' 'T' 'T' 'C' 'T' 'C' 'C' 'C'
+  'T' 'C' 'C' 'C' 'G' 'T' 'G' 'C' 'G' 'C' 'T' 'C' 'T' 'C' 'G' 'C' 'G' 'G'
+  'C' 'T' 'T' 'T' 'G' 'C' 'A' 'G' 'G' 'T' 'T' 'A' 'A' 'A' 'T' 'C' 'A' 'T'
+  'C' 'A' 'T' 'G' 'G' 'T' 'T' 'G' 'T' 'G' 'G' 'C' 'G' 'C' 'G' 'A' 'A' 'A'
+  'A' 'G' 'T' 'A' 'C' 'G' 'G' 'N' 'C' 'G' 'A' 'C' 'T' 'C' 'T' 'C' 'G' 'A'
+  'C' 'A' 'T' 'C' 'G' 'C' 'G' 'A' 'C' 'C' 'G' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'T' 'G' 'A' 'G' 'T' 'A' 'G' 'T' 'G' 'T' 'G' 'A'
+  'G' 'A' 'A' 'C' 'G' 'T' 'C' 'T' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'G' 'C' 'T'
+  'A' 'A' 'C' 'G' 'T' 'A' 'C' 'G' 'T' 'C' 'G' 'G' 'C' 'T' 'G' 'G' 'G' 'G'
+  'A' 'T' 'C' 'G' 'A' 'T' 'T' 'G' 'G' 'C' 'G' 'G' 'A' 'C' 'A' 'G' 'T' 'A'
+  'A' 'A' 'C' 'G' 'C' 'G' 'T' 'G' 'T' 'T' 'T' 'T' 'T' 'C' 'C' 'C' 'C' 'G'
+  'A' 'T' 'G' 'G' 'C' 'A' 'T' 'C' 'T' 'T' 'C' 'G' 'T' 'T' 'C' 'C' 'G' 'G'
+  'A' 'C' 'C' 'T' 'C' 'C' 'T' 'C' 'G' 'C' 'A' 'T' 'T' 'C' 'T' 'C' 'C' 'C'
+  'T' 'C' 'C' 'C' 'G' 'T' 'G' 'C' 'G' 'C' 'T' 'C' 'T' 'C' 'G' 'C' 'N' 'G'
+  'C' 'T' 'T' 'T' 'G' 'C' 'A' 'G' 'G' 'T' 'T' 'A' 'A' 'A' 'T' 'C' 'A' 'T'
+  'C' 'A' 'T' 'G' 'G' 'T' 'T' 'G' 'T' 'G' 'G' 'C' 'G' 'C' 'G' 'A' 'A' 'A'
+  'A' 'G' 'N' 'A' 'C' 'N' 'G' 'C' 'C' 'G' 'A' 'C' 'T' 'C' 'T' 'C' 'G' 'A'
+  'C' 'A' 'T' 'C' 'G' 'C' 'G' 'A' 'C' 'C' 'G' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'T' 'G' 'A' 'G' 'T' 'A' 'G' 'T' 'G' 'T' 'G' 'A'
+  'G' 'A' 'A' 'C' 'G' 'T' 'C' 'T' 'C' 'G' 'A' 'C' 'G' 'C' 'G' 'G' 'C' 'T'
+  'A' 'A' 'C' 'G' 'T' 'A' 'C' 'G' 'T' 'C' 'G' 'G' 'C' 'T' 'G' 'G' 'G' 'G'
+  'A' 'T' 'C' 'G' 'A' 'T' 'T' 'G' 'G' 'C' 'G' 'G' 'A' 'C' 'A' 'G' 'T' 'A'
+  'A' 'A' 'C' 'G' 'C' 'G' 'T' 'G' 'T' 'T' 'T' 'T' 'T' 'C' 'C' 'C' 'C' 'G'
+  'A' 'T' 'G' 'G' 'C' 'A' 'T' 'C' 'T' 'C' 'C' 'G' 'T' 'T' 'C' 'C' 'G' 'G'
+  'T' 'C' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' 'G' 'T' 'T' 'A' 'A' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' 'C' 'G' 'T' 'G' 'T' 'C' 'T' 'C' 'G' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' 'G' 'G' 'C' 'T' 'C' 'C' 'C' 'G' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-']]
+2019-06-21 10:00:08,605 	pid=21457 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'C' 'C' 'C' 'G' 'A' 'G' 'G' 'T' 'G'
+  'C' 'C' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'T' 'G' 'A' 'T' 'C' 'T' 'G' 'C'
+  'A' 'A' 'G' 'G' 'C' 'G' 'T' 'T' 'G' 'T' 'G' 'G' 'C' 'C' 'A' 'G' 'G' 'C'
+  'T' 'T' 'C' 'A' 'C' 'G' 'G' 'T' 'A' 'C' 'G' 'G' 'G' 'T' 'C' 'C' 'C' 'G'
+  'A' 'A' 'A' 'T' 'C' 'G' 'A' 'T' 'A' 'T' 'T' 'C' 'G' 'C' 'G' 'A' 'G' 'G'
+  'G' 'C' 'A' 'T' 'C' 'C' 'A' 'G' 'C' 'T' 'C' 'G' 'T' 'T' 'C' 'A' 'G' 'C'
+  'A' 'C' 'A' 'A' 'T' 'A' 'T' 'C' 'G' 'A' 'T' 'A' 'T' 'T' 'A' 'T' 'C' 'T'
+  'G' 'T' 'A' 'C' 'C' 'A' 'A' 'T' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'C' 'C' 'C' 'G' 'A' 'G' 'G' 'T' 'G'
+  'C' 'C' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'T' 'G' 'A' 'T' 'C' 'T' 'G' 'C'
+  'A' 'A' 'G' 'G' 'C' 'G' 'T' 'T' 'G' 'T' 'G' 'G' 'C' 'C' 'A' 'G' 'G' 'C'
+  'T' 'T' 'C' 'A' 'C' 'G' 'G' 'T' 'A' 'C' 'G' 'G' 'G' 'T' 'C' 'C' 'C' 'G'
+  'A' 'A' 'A' 'T' 'C' 'G' 'A' 'T' 'A' 'T' 'T' 'C' 'G' 'C' 'G' 'A' 'G' 'G'
+  'G' 'C' 'A' 'T' 'C' 'C' 'A' 'G' 'C' 'T' 'C' 'G' 'T' 'T' 'C' 'A' 'G' 'C'
+  'A' 'C' 'A' 'A' 'T' 'A' 'T' 'C' 'G' 'A' 'T' 'A' 'T' 'T' 'A' 'T' 'C' 'T'
+  'G' 'T' 'A' 'C' 'C' 'A' 'A' 'T' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,613 	pid=21457 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'G' 'C' 'C' 'T' 'T' 'C' 'T'
+  'T' 'C' 'G' 'A' 'T' 'A' 'C' 'G' 'G' 'T' 'A' 'G' 'C' 'G' 'G' 'T' 'A' 'A'
+  'C' 'T' 'G' 'T' 'G' 'A' 'A' 'A' 'G' 'A' 'T' 'G' 'C' 'C' 'T' 'C' 'C' 'A'
+  'T' 'C' 'C' 'G' 'C' 'G' 'A' 'T' 'A' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'A' 'G'
+  'C' 'C' 'G' 'C' 'T' 'G' 'G' 'T' 'A' 'T' 'C' 'A' 'A' 'C' 'T' 'T' 'C' 'C'
+  'G' 'T' 'T' 'A' 'C' 'T' 'A' 'C' 'A' 'A' 'C' 'G' 'A' 'G' 'G' 'G' 'C' 'C'
+  'T' 'G' 'A' 'T' 'C' 'G' 'G' 'C' 'A' 'T' 'C' 'T' 'C' 'C' 'C' 'T' 'C' 'G'
+  'A' 'T' 'G' 'A' 'A' 'A' 'C' 'G' 'A' 'C' 'C' 'A' 'C' 'G' 'A' 'T' 'C' 'C'
+  'A' 'G' 'G' 'A' 'T' 'G' 'T' 'G' 'A' 'A' 'C' 'G' 'A' 'T' 'A' 'T' 'A' 'C'
+  'T' 'G' 'C' 'A' 'G' 'G' 'T' 'C' 'T' 'T' 'C' 'G' 'G' 'C' 'G' 'C' 'C' 'G'
+  'A' 'A' 'A' 'G' 'G' 'C' 'T' 'T' 'G' 'C' 'C' 'G' 'G' 'C' 'C' 'G' 'C' 'A'
+  'A' 'A' 'A' 'G' 'G' 'A' 'C' 'C' 'C' 'A' 'A' 'A' 'C' 'A' 'C' 'C' 'T' 'G'
+  'G' 'C' 'T' 'A' 'C' 'A' 'G' 'G' 'C' 'T' 'A' 'G' 'A' 'G' 'A' 'A' 'C' 'T'
+  'G' 'G' 'T' 'C' 'G' 'C' 'C' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'G' 'C' 'C' 'T' 'T' 'C' 'T'
+  'T' 'C' 'G' 'A' 'T' 'A' 'C' 'G' 'G' 'T' 'A' 'G' 'C' 'G' 'G' 'T' 'A' 'A'
+  'C' 'T' 'G' 'T' 'G' 'A' 'A' 'A' 'G' 'A' 'T' 'G' 'C' 'C' 'T' 'C' 'C' 'A'
+  'T' 'C' 'C' 'G' 'C' 'G' 'A' 'T' 'A' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'A' 'G'
+  'C' 'C' 'G' 'C' 'T' 'G' 'G' 'T' 'A' 'T' 'C' 'A' 'A' 'C' 'T' 'T' 'C' 'C'
+  'G' 'T' 'T' 'A' 'C' 'T' 'A' 'C' 'A' 'A' 'C' 'G' 'A' 'G' 'G' 'G' 'C' 'C'
+  'T' 'G' 'A' 'T' 'C' 'G' 'G' 'C' 'A' 'T' 'C' 'T' 'C' 'C' 'C' 'T' 'C' 'G'
+  'A' 'T' 'G' 'A' 'A' 'A' 'C' 'G' 'A' 'C' 'C' 'A' 'C' 'G' 'A' 'T' 'C' 'C'
+  'A' 'G' 'G' 'A' 'T' 'G' 'T' 'G' 'A' 'A' 'C' 'G' 'A' 'T' 'A' 'T' 'A' 'C'
+  'T' 'G' 'C' 'A' 'G' 'G' 'T' 'C' 'T' 'T' 'C' 'G' 'G' 'C' 'G' 'C' 'C' 'G'
+  'A' 'A' 'A' 'G' 'G' 'C' 'T' 'T' 'G' 'C' 'C' 'G' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']]
+2019-06-21 10:00:08,619 	pid=21457 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'C' 'G' 'C' 'G' 'G' 'A' 'A' 'C' 'A' 'G' 'G'
+  'A' 'T' 'C' 'A' 'G' 'C' 'G' 'A' 'C' 'T' 'C' 'C' 'A' 'C' 'C' 'G' 'A' 'C'
+  'C' 'A' 'G' 'G' 'C' 'C' 'A' 'T' 'G' 'C' 'C' 'C' 'G' 'C' 'G' 'A' 'G' 'C'
+  'G' 'C' 'G' 'G' 'A' 'A' 'C' 'C' 'G' 'A' 'C' 'C' 'A' 'T' 'G' 'A' 'A' 'C'
+  'A' 'G' 'G' 'A' 'A' 'G' 'A' 'T' 'C' 'G' 'C' 'C' 'G' 'T' 'C' 'A' 'G' 'G'
+  'T' 'A' 'G' 'A' 'T' 'G' 'C' 'G' 'T' 'T' 'T' 'C' 'G' 'T' 'G' 'C' 'C' 'G'
+  'A' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'C' 'G' 'C' 'G' 'G' 'A' 'A' 'C' 'A' 'G' 'G'
+  'A' 'T' 'C' 'A' 'G' 'C' 'G' 'A' 'C' 'T' 'C' 'C' 'A' 'C' 'C' 'G' 'A' 'C'
+  'C' 'A' 'G' 'G' 'C' 'C' 'A' 'T' 'G' 'C' 'C' 'C' 'G' 'C' 'G' 'A' 'G' 'C'
+  'G' 'C' 'G' 'G' 'A' 'A' 'C' 'C' 'G' 'A' 'C' 'C' 'A' 'T' 'G' 'A' 'A' 'C'
+  'A' 'G' 'G' 'A' 'A' 'G' 'A' 'T' 'C' 'G' 'C' 'C' 'G' 'T' 'C' 'A' 'G' 'G'
+  'T' 'A' 'G' 'A' 'T' 'G' 'C' 'G' 'T' 'T' 'T' 'C' 'G' 'T' 'G' 'C' 'C' 'G'
+  'A' 'A' 'C' 'C' 'G']]
+2019-06-21 10:00:08,625 	pid=21457 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'A' 'G' 'T' 'A' 'C' 'T' 'C' 'G' 'A' 'A' 'G'
+  'A' 'A' 'T' 'G' 'C' 'G' 'A' 'T' 'G' 'C' 'C' 'C' 'C' 'A' 'G' 'C' 'T' 'C'
+  'G' 'C' 'C' 'A' 'G' 'G' 'A' 'T' 'C' 'G' 'C' 'C' 'G' 'T' 'G' 'A' 'T' 'C'
+  'A' 'G' 'C' 'G' 'G' 'C' 'G' 'C' 'G' 'G' 'T' 'C' 'G' 'G' 'G' 'T' 'A' 'C'
+  'T' 'T' 'G' 'A' 'G' 'A' 'T' 'G' 'G' 'C' 'C' 'G' 'T' 'A' 'C' 'C' 'A' 'G'
+  'G' 'C' 'A' 'A' 'A' 'G' 'G' 'T' 'C' 'A' 'T' 'G' 'A' 'A' 'G' 'A' 'C' 'G'
+  'T' 'T' 'G' 'G' 'A' 'G' 'C' 'C' 'C' 'A' 'G' 'C' 'n' 'n' 'n' 'n' 'C' 'G'
+  'A' 'T' 'C' 'A' 'G' 'A' 'T' 'G' 'C' 'G' 'C' 'G' 'A' 'G' 'C' 'C' 'G' 'A'
+  'T' 'C' 'A' 'G' 'A' 'A' 'T' 'A' 'G' 'A' 'A' 'C' 'C' 'T' 'T' 'C' 'A' 'C'
+  'G' 'T' 'C' 'G' 'C' 'T' 'T' 'C' 'C' 'A' 'C' 'G' 'G' 'T' 'T' 'T' 'C' 'T'
+  'T' 'T' 'C' 'G' 'C' 'A' 'T' 'T' 'C' 'T' 'T' 'C' 'A' 'C' 'A' 'A' 'A' 'G'
+  'C' 'T' 'G' 'A' 'A' 'G' 'A' 'T' 'G' 'C' 'G' 'G' 'G' 'G' 'C' 'G' 'T' 'C'
+  'G' 'T' 'T' 'A' 'T' 'G' 'C' 'G' 'C' 'A' 'A' 'T' 'C' 'C' 'T' 'C' 'A' 'G'
+  'G' 'A' 'G' 'C' 'C' 'C' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'A' 'G' 'T' 'A' 'C' 'T' 'C' 'G' 'A' 'A' 'G'
+  'A' 'A' 'T' 'G' 'C' 'G' 'A' 'T' 'G' 'C' 'C' 'C' 'C' 'A' 'G' 'C' 'T' 'C'
+  'G' 'C' 'C' 'A' 'G' 'G' 'A' 'T' 'C' 'A' 'C' 'C' 'G' 'T' 'G' 'A' 'T' 'C'
+  'A' 'G' 'C' 'G' 'G' 'C' 'G' 'C' 'G' 'G' 'T' 'C' 'G' 'G' 'G' 'T' 'A' 'T'
+  'T' 'T' 'G' 'A' 'G' 'A' 'T' 'G' 'G' 'C' 'C' 'G' 'T' 'A' 'C' 'C' 'A' 'G'
+  'G' 'C' 'A' 'A' 'A' 'G' 'G' 'T' 'C' 'A' 'T' 'G' 'A' 'A' 'G' 'A' 'C' 'G'
+  'T' 'T' 'G' 'G' 'A' 'G' 'C' 'C' 'C' 'A' 'G' 'C' 'n' 'n' 'n' 'n' 'C' 'G'
+  'A' 'T' 'C' 'A' 'G' 'A' 'T' 'G' 'C' 'G' 'C' 'G' 'A' 'G' 'C' 'C' 'G' 'A'
+  'T' 'C' 'A' 'G' 'A' 'A' 'T' 'A' 'G' 'A' 'A' 'C' 'C' 'T' 'T' 'C' 'A' 'C'
+  'G' 'T' 'C' 'G' 'C' 'T' 'T' 'C' 'C' 'A' 'C' 'G' 'G' 'T' 'T' 'T' 'C' 'T'
+  'T' 'T' 'C' 'G' 'C' 'A' 'T' 'T' 'C' 'T' 'T' 'C' 'A' 'C' 'A' 'A' 'A' 'G'
+  'C' 'T' 'G' 'A' 'A' 'G' 'A' 'T' 'G' 'C' 'G' 'G' 'G' 'G' 'C' 'G' 'T' 'C'
+  'G' 'T' 'T' 'A' 'T' 'G' 'C' 'G' 'C' 'A' 'A' 'T' 'C' 'C' 'T' 'C' 'A' 'G'
+  'G' 'A' 'G' 'C' 'C' 'C' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,630 	pid=21457 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'C' 'G' 'A' 'G' 'T' 'C' 'C' 'A' 'G' 'C'
+  'T' 'G' 'C' 'C' 'C' 'T' 'T' 'G' 'C' 'C' 'C' 'G' 'A' 'C' 'G' 'A' 'T' 'G'
+  'A' 'C' 'G' 'T' 'G' 'C' 'A' 'T' 'C' 'T' 'C' 'G' 'C' 'G' 'G' 'C' 'C' 'G'
+  'A' 'T' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'C' 'G' 'A' 'G' 'T' 'C' 'C' 'A' 'G' 'C'
+  'T' 'G' 'C' 'C' 'C' 'Y' 'T' 'G' 'C' 'C' 'C' 'G' 'A' 'C' 'G' 'A' 'T' 'G'
+  'A' 'C' 'G' 'T' 'G' 'C' 'A' 'T' 'C' 'T' 'C' 'G' 'C' 'G' 'G' 'C' 'C' 'G'
+  'A' 'T' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'C' 'G' 'A' 'G' 'T' 'C' 'S' 'A' 'G' 'C'
+  'T' 'G' 'S' 'C' 'C' 'y' 'T' 'G' 'S' 'C' 'C' 'G' 'A' 'C' 'G' 'A' 'T' 's'
+  'A' 'C' 'G' 'T' 'G' 'C' 'A' 'T' 'C' 'T' 'C' 'r' 'C' 'G' 'G' 'C' 'C' 'G'
+  'A' 'T' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,632 	pid=21457 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'T' 'G' 'G' 'A' 'A' 'C' 'G' 'G' 'C' 'G' 'G' 'C'
+  'A' 'G' 'C' 'G' 'T' 'C' 'G' 'A' 'G' 'T' 'T' 'C' 'T' 'C' 'C' 'T' 'C' 'A'
+  'A' 'G' 'C' 'G' 'A' 'G' 'G' 'C' 'C' 'T' 'G' 'C' 'A' 'G' 'C' 'T' 'G' 'T'
+  'G' 'C' 'C' 'T' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'T' 'G' 'G' 'A' 'A' 'C' 'G' 'G' 'C' 'G' 'G' 'C'
+  'A' 'G' 'C' 'G' 'T' 'C' 'G' 'A' 'G' 'T' 'T' 'C' 'T' 'C' 'C' 'T' 'C' 'A'
+  'A' 'G' 'C' 'G' 'A' 'G' 'G' 'C' 'C' 'T' 'G' 'C' 'A' 'G' 'C' 'T' 'G' 'T'
+  'G' 'C' 'C' 'T' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,753 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'T' 'T' 'C' 'G'
+  'T' 'G' 'G' 'C' 'G' 'G' 'T' 'G' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'T' 'C' 'G'
+  'G' 'A' 'A' 'G' 'C' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'A' 'C' 'A' 'G' 'G' 'C'
+  'C' 'C' 'G' 'A' 'A' 'C' 'G' 'C' 'A' 'C' 'G' 'A' 'C' 'C' 'T' 'A' 'T' 'G'
+  'C' 'G' 'A' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'T' 'T' 'C' 'G'
+  'T' 'G' 'G' 'C' 'G' 'G' 'T' 'G' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'T' 'C' 'G'
+  'G' 'A' 'A' 'G' 'C' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'A' 'C' 'A' 'G' 'G' 'C'
+  'C' 'C' 'G' 'A' 'A' 'C' 'G' 'C' 'A' 'C' 'G' 'A' 'C' 'C' 'T' 'A' 'T' 'G'
+  'C' 'G' 'A' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'T' 'T' 'C' 'G'
+  'T' 'G' 'N' 'C' 'G' 'G' 'T' 'G' 'G' 'C' 'C' 'G' 'A' 'C' 'G' 'T' 'C' 'G'
+  'G' 'A' 'A' 'G' 'C' 'G' 'C' 'A' 'G' 'G' 'G' 'A' 'A' 'C' 'A' 'G' 'G' 'C'
+  'C' 'C' 'G' 'A' 'A' 'C' 'G' 'C' 'A' 'C' 'G' 'A' 'C' 'C' 'T' 'A' 'T' 'G'
+  'C' 'G' 'A' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'C' 'G']]
+2019-06-21 10:00:08,761 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'C' 'G' 'T' 'C' 'C' 'T' 'T' 'T' 'T' 'C' 'C'
+  'A' 'C' 'T' 'G' 'T' 'T' 'A' 'C' 'T' 'T' 'C' 'C' 'G' 'C' 'G' 'T' 'C' 'A'
+  'A' 'A' 'A' 'C' 'G' 'G' 'T' 'C' 'A' 'A' 'C' 'A' 'A' 'T' 'C' 'T' 'G' 'C'
+  'A' 'C' 'A' 'A' 'A' 'A' 'C' 'G' 'G' 'G' 'C' 'G' 'G' 'A' 'A' 'G' 'C' 'G'
+  'C' 'G' 'G' 'G' 'C' 'A' 'T' 'G' 'C' 'A' 'A' 'A' 'C' 'C' 'A' 'A' 'G' 'C'
+  'T' 'T' 'A' 'T' 'T' 'G' 'C' 'A' 'A' 'A' 'T' 'T' 'T' 'C' 'C' 'A' 'G' 'C'
+  'T' 'T' 'G' 'C' 'G' 'G' 'C' 'T' 'A' 'A' 'A' 'C' 'T' 'C' 'T' 'T' 'T' 'A'
+  'T' 'C' 'C' 'G' 'T' 'C' 'A' 'T' 'T' 'T' 'T' 'A' 'C' 'T' 'C' 'C' 'G' 'T'
+  'T' 'T' 'A' 'A' 'C' 'C' 'C' 'T' 'T' 'A' 'T' 'T' 'T' 'G' 'C' 'C' 'C' 'G'
+  'G' 'C' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'C' 'G' 'T' 'C' 'C' 'T' 'T' 'T' 'T' 'C' 'C'
+  'A' 'C' 'T' 'G' 'T' 'T' 'A' 'C' 'T' 'T' 'C' 'C' 'G' 'C' 'G' 'T' 'C' 'A'
+  'A' 'A' 'A' 'C' 'G' 'G' 'T' 'C' 'A' 'A' 'C' 'A' 'A' 'T' 'C' 'T' 'G' 'C'
+  'A' 'C' 'A' 'A' 'A' 'A' 'C' 'G' 'G' 'G' 'C' 'G' 'G' 'A' 'A' 'G' 'C' 'G'
+  'C' 'G' 'G' 'G' 'C' 'A' 'T' 'G' 'C' 'A' 'A' 'A' 'C' 'C' 'A' 'A' 'G' 'C'
+  'T' 'T' 'A' 'T' 'T' 'G' 'C' 'A' 'A' 'A' 'T' 'T' 'T' 'C' 'C' 'A' 'G' 'C'
+  'T' 'T' 'G' 'C' 'G' 'G' 'C' 'T' 'A' 'A' 'A' 'C' 'N' 'C' 'T' 'T' 'T' 'A'
+  'T' 'C' 'C' 'G' 'T' 'C' 'A' 'T' 'T' 'T' 'T' 'A' 'C' 'T' 'C' 'C' 'G' 'T'
+  'T' 'T' 'A' 'A' 'C' 'C' 'C' 'T' 'T' 'A' 'T' 'T' 'T' 'G' 'C' 'C' 'C' 'G'
+  '-' '-' '-' '-' '-']]
+2019-06-21 10:00:08,766 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'C' 'G' 'C' 'C' 'G' 'T' 'G' 'C' 'C' 'G'
+  'A' 'G' 'G' 'A' 'T' 'C' 'G' 'C' 'G' 'A' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'T'
+  'G' 'T' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'A' 'C' 'T' 'G' 'C' 'T' 'G' 'A'
+  'A' 'C' 'C' 'G' 'C' 'A' 'T' 'T' 'C' 'A' 'G' 'G' 'A' 'G' 'C' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'C' 'G' 'C' 'C' 'G' 'T' 'G' 'C' 'C' 'G'
+  'A' 'G' 'G' 'A' 'T' 'C' 'G' 'C' 'G' 'A' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'T'
+  'G' 'T' 'G' 'C' 'C' 'G' 'C' 'C' 'G' 'A' 'A' 'C' 'T' 'G' 'C' 'T' 'G' 'A'
+  'A' 'C' 'C' 'G' 'C' 'A' 'T' 'T' 'C' 'A' 'G' 'G' 'A' 'G' 'C' 'C' 'C' 'G']]
+2019-06-21 10:00:08,783 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'C' 'T' 'A' 'T' 'C' 'A' 'G' 'A'
+  'T' 'G' 'C' 'G' 'C' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'A' 'A' 'A' 'C' 'T'
+  'T' 'G' 'G' 'C' 'G' 'T' 'G' 'G' 'T' 'T' 'T' 'G' 'C' 'T' 'A' 'A' 'A' 'G'
+  'C' 'C' 'G' 'A' 'A' 'G' 'C' 'T' 'G' 'T' 'A' 'G' 'G' 'C' 'T' 'G' 'G' 'A'
+  'C' 'A' 'C' 'C' 'G' 'C' 'C' 'C' 'A' 'C' 'A' 'G' 'C' 'A' 'A' 'A' 'G' 'A'
+  'A' 'C' 'A' 'A' 'G' 'G' 'C' 'A' 'A' 'A' 'C' 'T' 'A' 'T' 'C' 'T' 'G' 'C'
+  'A' 'A' 'T' 'C' 'G' 'A' 'T' 'A' 'G' 'A' 'A' 'C' 'A' 'G' 'n' 'n' 'n' 'n'
+  'A' 'C' 'T' 'A' 'G' 'C' 'G' 'G' 'A' 'C' 'C' 'A' 'C' 'G' 'C' 'T' 'A' 'G'
+  'C' 'G' 'C' 'C' 'C' 'G' 'C' 'T' 'T' 'T' 'G' 'T' 'C' 'T' 'C' 'G' 'G' 'T'
+  'T' 'G' 'A' 'C' 'C' 'C' 'C' 'G' 'T' 'T' 'C' 'A' 'G' 'G' 'C' 'C' 'A' 'A'
+  'C' 'G' 'C' 'C' 'A' 'A' 'C' 'A' 'A' 'C' 'G' 'G' 'G' 'C' 'A' 'A' 'A' 'A'
+  'T' 'T' 'T' 'T' 'A' 'A' 'T' 'C' 'G' 'C' 'T' 'A' 'C' 'C' 'A' 'A' 'T' 'A'
+  'C' 'G' 'G' 'T' 'A' 'A' 'C' 'A' 'A' 'T' 'A' 'A' 'T' 'C' 'C' 'T' 'T' 'A'
+  'C' 'A' 'A' 'A' 'T' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'T' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'C' 'T' 'A' 'T' 'C' 'A' 'G' 'A'
+  'T' 'G' 'C' 'G' 'C' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'A' 'A' 'A' 'C' 'T'
+  'T' 'G' 'G' 'C' 'G' 'T' 'G' 'G' 'T' 'T' 'T' 'G' 'C' 'T' 'A' 'A' 'A' 'G'
+  'C' 'C' 'G' 'A' 'A' 'G' 'C' 'T' 'G' 'T' 'A' 'G' 'G' 'C' 'T' 'G' 'G' 'A'
+  'C' 'A' 'C' 'C' 'G' 'C' 'C' 'C' 'A' 'C' 'A' 'G' 'C' 'A' 'A' 'A' 'G' 'A'
+  'A' 'C' 'A' 'A' 'G' 'G' 'C' 'A' 'A' 'A' 'C' 'T' 'A' 'T' 'C' 'T' 'G' 'C'
+  'A' 'A' 'T' 'C' 'G' 'A' 'T' 'A' 'G' 'A' 'A' 'C' '-' '-' 'n' 'n' 'n' 'n'
+  '-' '-' '-' 'A' 'G' 'C' 'G' 'G' 'A' 'C' 'C' 'A' 'C' 'G' 'C' 'T' 'A' 'G'
+  'C' 'G' 'C' 'C' 'C' 'G' 'C' 'T' 'T' 'T' 'G' 'T' 'C' 'T' 'C' 'G' 'G' 'T'
+  'T' 'G' 'A' 'C' 'C' 'C' 'C' 'G' 'T' 'T' 'C' 'A' 'G' 'G' 'C' 'C' 'A' 'A'
+  'C' 'G' 'C' 'C' 'A' 'A' 'C' 'A' 'A' 'C' 'G' 'G' 'G' 'C' 'A' 'A' 'A' 'A'
+  'T' 'T' 'T' 'T' 'A' 'A' 'T' 'C' 'G' 'C' 'T' 'A' 'C' 'C' 'A' 'A' 'T' 'A'
+  'C' 'G' 'G' 'T' 'A' 'A' 'C' 'A' 'A' 'T' 'A' 'A' 'T' 'C' 'C' 'T' 'T' 'A'
+  'C' 'A' 'A' 'A' 'T' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'T' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'C' 'T' 'A' 'T' 'C' 'A' 'G' 'A'
+  'T' 'G' 'C' 'G' 'C' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'A' 'A' 'A' 'C' 'T'
+  'T' 'G' 'G' 'T' 'G' 'T' 'G' 'G' 'T' 'T' 'T' 'G' 'C' 'T' 'A' 'A' 'A' 'G'
+  'C' 'C' 'G' 'A' 'A' 'G' 'C' 'T' 'G' 'T' 'A' 'G' 'G' 'C' 'T' 'G' 'G' 'A'
+  'C' 'A' 'C' 'C' 'G' 'C' 'C' 'C' 'A' 'C' 'A' 'G' 'C' 'A' 'A' 'A' 'G' 'A'
+  'A' 'C' 'A' 'A' 'G' 'G' 'C' 'A' 'A' 'A' 'C' 'T' 'A' 'T' 'C' 'T' 'G' 'C'
+  'A' 'A' 'T' 'C' 'G' 'A' 'T' 'A' 'G' 'A' 'A' 'C' '-' '-' 'n' 'n' 'n' 'n'
+  '-' '-' 'T' 'A' 'G' 'C' 'G' 'G' 'A' 'C' 'C' 'A' 'C' 'G' 'C' 'T' 'A' 'G'
+  'C' 'G' 'C' 'C' 'C' 'G' 'C' 'T' 'T' 'T' 'G' 'T' 'C' 'T' 'C' 'G' 'G' 'T'
+  'T' 'G' 'A' 'C' 'C' 'C' 'C' 'G' 'T' 'T' 'C' 'A' 'G' 'G' 'C' 'C' 'A' 'A'
+  'C' 'G' 'C' 'C' 'A' 'A' 'C' 'A' 'A' 'C' 'G' 'G' 'G' 'C' 'A' 'A' 'A' 'A'
+  'T' 'T' 'T' 'T' 'A' 'A' 'T' 'C' 'G' 'C' 'T' 'A' 'C' 'C' 'A' 'A' 'T' 'A'
+  'C' 'G' 'G' 'T' 'A' 'A' 'C' 'A' 'A' 'T' 'A' 'A' 'T' 'C' 'C' 'T' 'T' 'A'
+  'C' 'A' 'A' 'A' 'T' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'T' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'G' 'A' 'C' 'T' 'A' 'T' 'C' 'A' 'G' 'A'
+  'T' 'G' 'C' 'G' 'C' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'A' 'A' 'A' 'C' 'T'
+  'T' 'G' 'G' 'T' 'G' 'T' 'G' 'G' 'T' 'T' 'T' 'G' 'C' 'T' 'A' 'A' 'A' 'G'
+  'C' 'C' 'G' 'A' 'A' 'G' 'C' 'T' 'G' 'T' 'A' 'G' 'G' 'C' 'T' 'G' 'G' 'A'
+  'C' 'A' 'C' 'C' 'G' 'C' 'C' 'C' 'A' 'C' 'A' 'G' 'C' 'A' 'A' 'A' 'G' 'A'
+  'A' 'C' 'A' 'A' 'G' 'G' 'C' 'A' 'A' 'A' 'C' 'T' 'A' 'T' 'C' 'T' 'G' 'C'
+  'A' 'A' 'T' 'C' 'G' 'A' 'T' 'A' 'G' 'A' 'A' 'C' '-' '-' 'n' 'n' 'n' 'n'
+  '-' '-' 'T' 'A' 'G' 'C' 'G' 'G' 'A' 'C' 'C' 'A' 'C' 'G' 'C' 'T' 'A' 'G'
+  'C' 'G' 'C' 'C' 'C' 'G' 'C' 'T' 'T' 'T' 'G' 'T' 'C' 'T' 'C' 'G' 'G' 'T'
+  'T' 'G' 'A' 'C' 'C' 'C' 'C' 'G' 'T' 'T' 'C' 'A' 'G' 'G' 'C' 'C' 'A' 'A'
+  'C' 'G' 'C' 'C' 'A' 'A' 'C' 'A' 'A' 'C' 'G' 'G' 'G' 'C' 'A' 'A' 'A' 'A'
+  'T' 'T' 'T' 'T' 'A' 'A' 'T' 'C' 'G' 'C' 'T' 'A' 'C' 'C' 'A' 'A' 'T' 'A'
+  'C' 'G' 'G' 'T' 'A' 'A' 'C' 'A' 'A' 'T' 'A' 'A' 'T' 'C' 'C' 'T' 'T' 'A'
+  'C' 'A' 'A' 'A' 'T' 'T' 'C' 'A' 'C' 'C' 'G' 'A' 'T' 'C' 'C' 'G']]
+2019-06-21 10:00:08,794 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'G' 'T' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'G' 'G' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'G'
+  'A' 'C' 'C' 'G' 'T' 'G' 'C' 'G' 'G' 'C' 'T' 'G' 'G' 'C' 'G' 'C' 'C' 'C'
+  'C' 'G' 'G' 'C' 'C' 'G' 'C' 'A' 'T' 'T' 'C' 'A' 'T' 'T' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'T' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'G' 'G' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'G'
+  'A' 'C' 'C' 'G' 'T' 'G' 'C' 'G' 'G' 'C' 'T' 'G' 'G' 'C' 'G' 'C' 'C' 'C'
+  'C' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'T' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'G' 'G' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'G'
+  'A' 'C' 'C' 'G' 'T' 'G' 'C' 'G' 'G' 'C' 'T' 'G' 'G' 'C' 'G' 'C' 'C' 'C'
+  'C' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'T' 'A' 'G' 'C' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'A' 'G' 'C' 'T' 'G' 'C' 'A' 'G' 'G' 'G' 'G' 'C' 'G' 'G' 'G' 'C' 'T' 'G'
+  'A' 'C' 'C' 'G' 'T' 'G' 'C' 'G' 'G' 'C' 'T' 'G' 'G' 'C' 'G' 'C' 'C' 'C'
+  'C' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']]
+2019-06-21 10:00:08,806 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'C' 'C' 'C' 'G' 'C' 'C' 'A' 'C' 'C' 'G' 'C' 'G'
+  'A' 'T' 'C' 'T' 'C' 'G' 'A' 'A' 'A' 'C' 'G' 'G' 'T' 'G' 'G' 'T' 'C' 'G'
+  'C' 'C' 'G' 'T' 'A' 'A' 'A' 'G' 'A' 'C' 'G' 'T' 'T' 'G' 'C' 'G' 'A' 'C'
+  'C' 'C' 'G' 'A' 'C' 'C' 'A' 'T' 'G' 'C' 'G' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'C' 'G' 'A' 'T' 'G' 'C' 'T' 'C' 'C' 'G' 'C' 'C' 'G' 'G' 'C' 'G' 'C' 'A'
+  'C' 'G' 'C' 'C' 'C' 'G' 'A' 'C' 'G' 'C' 'T' 'G' 'T' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'S' 'C' 'G' 'C' 'C' 'A' 'C' 'C' 'G' 'C' 'G'
+  'A' 'T' 'C' 'T' 'C' 'G' 'A' 'A' 'A' 'C' 'G' 'G' 'T' 'G' 'G' 'T' 'C' 'G'
+  'C' 'C' 'G' 'T' 'A' 'A' 'A' 'G' 'A' 'C' 'G' 'T' 'T' 'r' 'C' 'G' 'A' 'C'
+  'C' 'C' 'G' 'A' 'C' 'C' 'R' 'y' 'G' 'C' 'G' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'C' 'G' 'A' 'T' 'G' 'C' 'T' 'C' 'C' 'G' 'C' 'C' 'G' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'C' 'G' 'C' 'C' 'A' 'C' 'C' 'G' 'C' 'G'
+  'A' 'T' 'C' 'T' 'C' 'G' 'A' 'A' 'A' 'C' 'G' 'G' 'T' 'G' 'G' 'T' 'C' 'G'
+  'C' 'C' 'G' 'T' 'A' 'A' 'A' 'G' 'A' 'C' 'G' 'T' 'T' 'A' 'C' 'G' 'A' 'C'
+  'C' 'C' 'G' 'A' 'C' 'C' 'G' 'C' 'G' 'C' 'G' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'C' 'G' 'A' 'T' 'G' 'C' 'T' 'C' 'C' 'G' 'C' 'C' 'G' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'C' 'G' 'C' 'C' 'A' 'C' 'C' 'G' 'C' 'G'
+  'A' 'T' 'C' 'T' 'C' 'G' 'A' 'A' 'A' 'C' 'G' 'G' 'T' 'G' 'G' 'T' 'C' 'G'
+  'C' 'C' 'G' 'T' 'A' 'A' 'A' 'G' 'A' 'C' 'G' 'T' 'T' 'A' 'C' 'G' 'A' 'C'
+  'C' 'C' 'G' 'A' 'C' 'C' 'G' 'C' 'G' 'C' 'G' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'C' 'G' 'A' 'T' 'G' 'C' 'T' 'C' 'C' 'G' 'C' 'C' 'G' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'C' 'G' 'C' 'G' 'C' 'C' 'A' 'C' 'C' 'G' 'C' 'G'
+  'A' 'T' 'C' 'T' 'C' 'G' 'A' 'A' 'A' 'C' 'G' 'G' 'T' 'G' 'G' 'T' 'C' 'G'
+  'C' 'C' 'G' 'T' 'A' 'A' 'A' 'G' 'A' 'C' 'G' 'T' 'T' 'A' 'C' 'G' 'A' 'C'
+  'C' 'C' 'G' 'A' 'C' 'C' 'G' 'C' 'G' 'C' 'G' 'C' 'G' 'C' 'G' 'A' 'T' 'C'
+  'C' 'G' 'A' 'T' 'G' 'C' 'T' 'C' 'C' 'G' 'C' 'C' 'G' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']]
+2019-06-21 10:00:08,815 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'G' 'G' 'C' 'G' 'A' 'G' 'G' 'A' 'G' 'C'
+  'A' 'G' 'A' 'T' 'G' 'T' 'T' 'C' 'G' 'G' 'C' 'G' 'C' 'C' 'G' 'A' 'T' 'C'
+  'T' 'C' 'G' 'C' 'G' 'A' 'T' 'G' 'G' 'C' 'C' 'G' 'A' 'G' 'C' 'A' 'G' 'C'
+  'C' 'G' 'C' 'G' 'A' 'C' 'T' 'C' 'T' 'T' 'C' 'C' 'T' 'G' 'G' 'G' 'C' 'C'
+  'A' 'G' 'G' 'A' 'C' 'C' 'A' 'C' 'A' 'A' 'C' 'G' 'C' 'G' 'G' 'C' 'G' 'G'
+  'G' 'C' 'G' 'T' 'G' 'A' 'T' 'C' 'G' 'G' 'T' 'G' 'A' 'A' 'C' 'C' 'G' 'T'
+  'T' 'C' 'G' 'A' 'A' 'C' 'A' 'T' 'C' 'G' 'T' 'C' 'G' 'C' 'C' 'T' 'C' 'C'
+  'C' 'G' 'G' 'G' 'G' 'A' 'A' 'C' 'T' 'G' 'C' 'G' 'A' 'A' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'G' 'G' 'C' 'G' 'A' 'G' 'G' 'A' 'G' 'C'
+  'A' 'G' 'A' 'T' 'G' 'T' 'T' 'C' 'G' 'G' 'C' 'G' 'C' 'C' 'G' 'A' 'T' 'C'
+  'T' 'C' 'G' 'C' 'G' 'A' 'T' 'G' 'G' 'C' 'C' 'G' 'A' 'G' 'C' 'A' 'G' 'C'
+  'C' 'G' 'C' 'G' 'A' 'C' 'T' 'C' 'T' 'T' 'C' 'C' 'T' 'G' 'G' 'G' 'C' 'C'
+  'A' 'G' 'G' 'A' 'C' 'C' 'A' 'C' 'A' 'A' 'C' 'G' 'C' 'G' 'G' 'C' 'G' 'G'
+  'G' 'C' 'G' 'T' 'G' 'A' 'T' 'C' 'G' 'G' 'T' 'G' 'A' 'A' 'C' 'C' 'G' 'T'
+  'T' 'C' 'G' 'A' 'A' 'C' 'A' 'T' 'C' 'G' 'T' 'C' 'G' 'C' 'C' 'T' 'C' 'C'
+  'C' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'A' 'G' 'G' 'G' 'C' 'G' 'A' 'G' 'G' 'A' 'G' 'C'
+  'A' 'G' 'A' 'T' 'G' 'T' 'T' 'C' 'G' 'G' 'C' 'G' 'C' 'C' 'G' 'A' 'T' 'C'
+  'T' 'C' 'G' 'C' 'G' 'A' 'T' 'G' 'G' 'C' 'C' 'G' 'A' 'G' 'C' 'A' 'G' 'C'
+  'C' 'G' 'C' 'G' 'A' 'C' 'T' 'C' 'T' 'T' 'C' 'C' 'T' 'G' 'G' 'G' 'C' 'C'
+  'A' 'G' 'G' 'A' 'C' 'C' 'A' 'C' 'A' 'A' 'C' 'G' 'C' 'G' 'G' 'C' 'G' 'G'
+  'G' 'C' 'G' 'T' 'G' 'A' 'T' 'C' 'G' 'G' 'T' 'G' 'A' 'A' 'C' 'C' 'G' 'T'
+  'T' 'C' 'G' 'A' 'A' 'C' 'A' 'T' 'C' 'G' 'T' 'C' 'G' 'C' 'C' 'T' 'C' 'C'
+  'C' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-']]
+2019-06-21 10:00:08,823 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'C' 'C' 'G' 'T' 'G' 'G' 'A' 'T' 'G'
+  'G' 'C' 'G' 'G' 'C' 'A' 'G' 'T' 'T' 'T' 'T' 'G' 'C' 'T' 'G' 'A' 'C' 'G'
+  'C' 'C' 'C' 'T' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'C' 'G' 'C' 'A' 'A' 'G' 'T'
+  'T' 'C' 'G' 'T' 'C' 'G' 'G' 'C' 'G' 'A' 'G' 'G' 'G' 'C' 'A' 'A' 'C' 'C'
+  'G' 'T' 'G' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'T' 'T' 'T' 'T' 'G' 'A' 'T' 'G'
+  'T' 'T' 'G' 'A' 'G' 'G' 'G' 'A' 'C' 'A' 'T' 'C' 'G' 'A' 'A' 'A' 'G' 'C'
+  'T' 'T' 'C' 'A' 'T' 'C' 'T' 'C' 'A' 'T' 'T' 'C' 'n' 'n' 'n' 'n' 'C' 'A'
+  'G' 'A' 'G' 'T' 'G' 'T' 'G' 'C' 'G' 'C' 'T' 'T' 'T' 'G' 'A' 'T' 'T' 'C'
+  'A' 'A' 'A' 'A' 'A' 'G' 'A' 'T' 'G' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'G' 'C'
+  'G' 'C' 'A' 'C' 'G' 'G' 'A' 'C' 'G' 'A' 'T' 'C' 'T' 'A' 'T' 'C' 'C' 'T'
+  'T' 'C' 'C' 'G' 'C' 'T' 'T' 'G' 'C' 'T' 'G' 'A' 'T' 'C' 'A' 'G' 'T' 'C'
+  'C' 'C' 'G' 'A' 'T' 'G' 'C' 'G' 'A' 'C' 'G' 'C' 'C' 'C' 'C' 'T' 'C' 'T'
+  'G' 'C' 'G' 'G' 'T' 'C' 'T' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'A' 'C' 'T' 'C'
+  'G' 'C' 'C' 'G' 'T' 'G' 'C' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'G' 'C' 'C' 'G' 'T' 'G' 'G' 'A' 'T' 'G'
+  'G' 'C' 'G' 'G' 'C' 'A' 'G' 'T' 'T' 'T' 'T' 'G' 'C' 'T' 'G' 'A' 'C' 'G'
+  'C' 'C' 'C' 'T' 'G' 'G' 'C' 'G' 'G' 'C' 'G' 'C' 'G' 'C' 'A' 'A' 'G' 'T'
+  'T' 'C' 'G' 'T' 'C' 'G' 'G' 'C' 'G' 'A' 'G' 'G' 'G' 'C' 'A' 'A' 'C' 'C'
+  'G' 'T' 'G' 'G' 'C' 'A' 'G' 'G' 'A' 'T' 'T' 'T' 'T' 'T' 'G' 'A' 'T' 'G'
+  'T' 'T' 'G' 'A' 'G' 'G' 'G' 'A' 'C' 'A' 'T' 'C' 'G' 'A' 'A' 'A' 'G' 'C'
+  'T' 'T' 'C' 'A' 'T' 'C' 'T' 'C' 'A' 'T' 'T' 'C' 'n' 'n' 'n' 'n' 'C' 'A'
+  'G' 'A' 'G' 'T' 'G' 'T' 'G' 'C' 'G' 'C' 'T' 'T' 'T' 'G' 'A' 'T' 'T' 'C'
+  'A' 'A' 'A' 'A' 'A' 'G' 'A' 'T' 'G' 'G' 'C' 'A' 'G' 'G' 'A' 'A' 'G' 'C'
+  'G' 'C' 'A' 'C' 'G' 'G' 'A' 'C' 'G' 'A' 'T' 'C' 'T' 'A' 'T' 'C' 'C' 'T'
+  'T' 'C' 'C' 'G' 'C' 'T' 'T' 'G' 'C' 'T' 'G' 'A' 'T' 'C' 'A' 'G' 'T' 'C'
+  'C' 'C' 'G' 'A' 'T' 'G' 'C' 'G' 'A' 'C' 'G' 'C' 'C' 'C' 'C' 'T' 'C' 'T'
+  'G' 'C' 'G' 'G' 'T' 'C' 'T' 'G' 'G' 'A' 'C' 'G' 'C' 'C' 'A' 'C' 'T' 'C'
+  'G' 'C' 'C' 'G' 'T' 'G' 'C' 'C' 'C' 'G']]
+2019-06-21 10:00:08,830 	pid=21470 	[cluster_across.py]	INFO 	
+aseqs here: [['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'A' 'A' 'C'
+  'G' 'T' 'G' 'A' 'G' 'G' 'T' 'C' 'G' 'C' 'T' 'G' 'T' 'C' 'G' 'T' 'C' 'G'
+  'G' 'C' 'G' 'T' 'C' 'C' 'T' 'C' 'G' 'C' 'T' 'G' 'G' 'G' 'C' 'A' 'T' 'G'
+  'T' 'C' 'C' 'C' 'A' 'T' 'T' 'C' 'C' 'T' 'T' 'G' 'A' 'C' 'G' 'T' 'C' 'G'
+  'T' 'C' 'G' 'C' 'C' 'G' 'T' 'T' 'G' 'A' 'C' 'G' 'G' 'T' 'C' 'G' 'G' 'G'
+  'T' 'A' 'G' 'G' 'G' 'C' 'G' 'G' 'G' 'T' 'C' 'G' 'C' 'C' 'G' 'C' 'C' 'A'
+  'A' 'G' 'G' 'A' 'C' 'G' 'G' 'T' 'G' 'A' 'T' 'G' 'G' 'A' 'C' 'A' 'G' 'G'
+  'T' 'A' 'G' 'A' 'G' 'G' 'C' 'C' 'C' 'T' 'G' 'G' 'T' 'T' 'T' 'C' 'C' 'G'
+  'C' 'G' 'G' 'A' 'G' 'C' 'C' 'G' 'G' 'S' 'S' 's' 'C' 's' 'm' 'y' 'G' 'M'
+  'k' 'C' 'r' 's' 'Y' 'm' 'K' 's' 'Y' 'S' 'G' 'G' 'C' 'C' 'G' 'T' 'C' 'G'
+  'C' 'C' 'C' 'C' 'G']
+ ['T' 'G' 'C' 'A' 'G' 'G' 'G' 'C' 'T' 'T' 'C' 'C' 'C' 'A' 'G' 'A' 'A' 'C'
+  'G' 'T' 'G' 'A' 'G' 'G' 'T' 'C' 'G' 'C' 'T' 'G' 'T' 'C' 'G' 'T' 'C' 'G'
+  'G' 'C' 'G' 'T' 'C' 'C' 'T' 'C' 'G' 'C' 'T' 'G' 'G' 'G' 'C' 'A' 'T' 'G'
+  'T' 'C' 'C' 'C' 'A' 'T' 'T' 'C' 'C' 'T' 'T' 'G' 'A' 'C' 'G' 'T' 'C' 'G'
+  'T' 'C' 'G' 'C' 'C' 'G' 'T' 'T' 'G' 'A' 'C' 'G' 'G' 'T' 'C' 'G' 'G' 'G'
+  'T' 'A' 'G' 'G' 'G' 'C' 'G' 'G' 'G' 'T' 'C' 'G' 'C' 'C' 'G' 'C' 'C' 'A'
+  'A' 'G' 'G' 'A' 'C' 'G' 'G' 'T' 'G' 'A' 'T' 'G' 'G' 'A' 'C' 'A' 'G' 'G'
+  'T' 'A' 'G' 'A' 'G' 'G' 'C' 'C' 'C' 'T' 'G' 'G' 'T' 'T' 'T' 'C' 'C' 'G'
+  'C' 'G' 'G' 'A' 'G' 'C' 'C' 'G' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-' '-'
+  '-' '-' '-' '-' '-']]
